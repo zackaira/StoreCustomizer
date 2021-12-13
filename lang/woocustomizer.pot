@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2021-11-11 10:39+0200\n"
+"POT-Creation-Date: 2021-12-13 17:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -303,40 +303,30 @@ msgid "Watch our 'getting started' video on how to use StoreCustomizer"
 msgstr ""
 
 #: includes/class-wcz-settings.php:712
-msgid "Account"
+#: includes/customizer/customizer-options.php:1976
+#: includes/customizer/customizer-options.php:1983
+msgid "Account Details"
 msgstr ""
 
-#: includes/class-wcz-settings.php:715
-msgid "Upgrade"
-msgstr ""
-
-#: includes/class-wcz-settings.php:716
-msgid "Free Premium Trial"
-msgstr ""
-
-#: includes/class-wcz-settings.php:718
-msgid "Become an Affiliate"
-msgstr ""
-
-#: includes/class-wcz-settings.php:721 includes/class-wcz.php:275
+#: includes/class-wcz-settings.php:722 includes/class-wcz.php:275
 msgid "Contact Us"
 msgstr ""
 
-#: includes/class-wcz-settings.php:724
+#: includes/class-wcz-settings.php:725
 msgid ""
 "Click here to open the WordPress Customizer and navigate to the -> "
 "StoreCustomizer panel."
 msgstr ""
 
-#: includes/class-wcz-settings.php:725
+#: includes/class-wcz-settings.php:726
 msgid "Customize Your Settings"
 msgstr ""
 
-#: includes/class-wcz-settings.php:756
+#: includes/class-wcz-settings.php:757
 msgid "Cloning of WooCustomizer_API is forbidden."
 msgstr ""
 
-#: includes/class-wcz-settings.php:765
+#: includes/class-wcz-settings.php:766
 msgid "Unserializing instances of WooCustomizer_API is forbidden."
 msgstr ""
 
@@ -1597,11 +1587,6 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1965
 msgid "Account Details Tab"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:1976
-#: includes/customizer/customizer-options.php:1983
-msgid "Account Details"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1994
