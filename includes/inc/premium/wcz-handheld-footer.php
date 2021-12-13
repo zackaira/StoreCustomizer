@@ -48,18 +48,18 @@ if ( ! function_exists( 'wcz_woocommerce_cart_count' ) ) {
 	 * @return void
 	 */
 	function wcz_woocommerce_cart_count() {
-        $cart_itemno = WC()->cart->get_cart_contents_count(); ?>
-		<span class="wcz-hhmbcart">
+        $cart_itemno = WC()->cart ? WC()->cart->get_cart_contents_count() : 0; ?>
+        <span class="wcz-hhmbcart">
             <?php echo esc_html( '(' . $cart_itemno . ')' ); ?>
-        </span>
-	<?php
+        </span><?php
 	}
 }
 
 /**
  * Add Handheld Footer Bar to site.
  */
-function wcz_add_handheld_footer_bar() { ?>
+function wcz_add_handheld_footer_bar() {
+    if (is_admin()) return; ?>
     <div class="wcz-handheld-footerbar <?php echo get_option( 'wcz-handheld-footerbar-on', woocustomizer_library_get_default( 'wcz-handheld-footerbar-on' ) ); ?>">
         <div class="wcz-handheld-footerbar-inner">
             <?php if ( !get_option( 'wcz-handheld-remove-account', woocustomizer_library_get_default( 'wcz-handheld-remove-account' ) ) ) : ?>
@@ -84,11 +84,13 @@ function wcz_add_handheld_footer_bar() { ?>
                 </div>
             <?php endif; ?>
 
-            <?php if ( !get_option( 'wcz-handheld-remove-cart', woocustomizer_library_get_default( 'wcz-handheld-remove-cart' ) ) ) : ?>
+            <?php
+            if ( !get_option( 'wcz-handheld-remove-cart', woocustomizer_library_get_default( 'wcz-handheld-remove-cart' ) ) ) :
+                $cart_itemno = WC()->cart ? WC()->cart->get_cart_contents_count() : 0; ?>
                 <a href="<?php echo esc_url( wc_get_page_permalink( 'cart' ) ); ?>" class="wcz-handheld-link">
                     <?php if ( get_option( 'wcz-handheld-add-cart-count', woocustomizer_library_get_default( 'wcz-handheld-add-cart-count' ) ) ) : ?>
                         <div class="wcz-handheld-cart">
-                            <span class="wcz-handheld-no wcz-hhmbcart"><?php echo esc_html( '('.WC()->cart->get_cart_contents_count().')' ); ?></span>
+                            <span class="wcz-handheld-no wcz-hhmbcart"><?php echo esc_html( '(' . $cart_itemno . ')' ); ?></span>
                             <span class="dashicons dashicons-cart"></span>
                         </div>
                     <?php else: ?>
