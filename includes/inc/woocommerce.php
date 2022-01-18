@@ -1028,7 +1028,7 @@ function wcz_wc_extras() {
 		add_action( 'woocommerce_cart_is_empty', 'wcz_add_textto_empty_cart_page' );
     }
     if ( is_cart() && get_option( 'wcz-cart-edit-rts', woocustomizer_library_get_default( 'wcz-cart-edit-rts' ) ) ) {
-        add_filter( 'gettext', 'wcz_edit_empty_cart_btn_text', 20, 3 );
+        add_filter( 'woocommerce_return_to_shop_text', 'wcz_edit_empty_cart_btn_text', 20, 3 );
         add_filter( 'woocommerce_return_to_shop_redirect', 'wcz_edit_empty_cart_btn_url' );
     }
 
@@ -1226,11 +1226,7 @@ function wcz_product_relatedtxt( $translated ) {
 }
 // Edit 'Return To Shop' button text
 function wcz_edit_empty_cart_btn_text( $translated_text ) {
-        switch ( $translated_text ) {
-            case 'Return to shop' :
-                $translated_text = esc_html( get_option( 'wcz-cart-edit-rts-text', woocustomizer_library_get_default( 'wcz-cart-edit-rts-text' ) ) );
-                break;
-        }
+    $translated_text = esc_html( get_option( 'wcz-cart-edit-rts-text', woocustomizer_library_get_default( 'wcz-cart-edit-rts-text' ) ) );
     return $translated_text;
 }
 // Edit 'Return To Shop' button URL

@@ -229,6 +229,12 @@ class WooCustomizer {
 		wp_enqueue_style( $this->_token . '-customizer' );
 		wp_register_style( $this->_token . '-customizer-tour', esc_url( $this->includes_url ) . 'customizer/customizer-library/css/customizer-tour.css', array(), $this->_version );
 		wp_enqueue_style( $this->_token . '-customizer-tour' );
+
+		$installed_theme = wp_get_theme()->get('TextDomain');
+		if ('oceanwp' === $installed_theme) {
+			wp_register_style( $this->_token . '-oceanwp', esc_url( $this->assets_url ) . 'css/themes/oceanwp.css', array(), $this->_version );
+			wp_enqueue_style( $this->_token . '-oceanwp' );
+		}
 	} // End customizer_enqueue_styles ()
 
 	/**

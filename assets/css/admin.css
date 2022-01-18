@@ -1,6 +1,3 @@
-.fs-section > h2.nav-tab-wrapper {
-  display: none !important;
-}
 span.wcznotif.hasnotif {
   display: inline-block;
   background-color: #0273aa;
@@ -167,6 +164,7 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   float: none;
   display: block;
   position: relative;
+  white-space: normal;
 }
 #wcz_settings .nav-tab-wrapper .nav-tab:hover {
   background-color: #fff !important;

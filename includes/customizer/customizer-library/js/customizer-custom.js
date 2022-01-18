@@ -2,8 +2,7 @@
  * StoreCustomizer Custom JS
  */
 ( function( $ ) {
-    $( document ).ready( function () {
-
+    $( document ).ready( function ($) {
         // Show values for Range Inputs
         $(document).on('input change', 'input[type="range"]', function() {
             $(this).prev().find( '.wcz-rangeval' ).html( $(this).val() );

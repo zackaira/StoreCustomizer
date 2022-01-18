@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce shop, ecommerce, catalogue mode, ajax search, product quick view, custom thank you pages, menu cart
 Requires at least: 5.0
 Tested up to: 5.8
-Stable tag: 2.3.6
+Stable tag: 2.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -256,6 +256,13 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.3.7 =
+* Frontend & backend styling tweaks/fixes
+* Version compatibility bump for WC 6.1
+* Updated code to edit the empty cart 'Return to Shop' button text
+* Updated Spanish es_ES language .mo & .po files
+* Updated the language .pot file
 
 = 2.3.6 =
 * Styling tweaks/fixes
