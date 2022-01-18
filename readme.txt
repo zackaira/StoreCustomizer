@@ -3,7 +3,7 @@ Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce shop, ecommerce, catalogue mode, ajax search, product quick view, custom thank you pages, menu cart
 Requires at least: 5.0
-Tested up to: 5.8
+Tested up to: 5.9
 Stable tag: 2.3.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
