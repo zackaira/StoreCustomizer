@@ -1139,7 +1139,7 @@ function woocustomizer_customizer_library_build_styles() {
 	// EXCLUDED FROM FREE VERSION -- This "if" block will be auto removed from the Free version.
 	if ( wcz_fs()->can_use_premium_code__premium_only() ) {
 
-		if ( is_product() && get_option( 'wcz-enable-stickcart', woocustomizer_library_get_default( 'wcz-enable-stickcart' ) ) && get_option( 'wcz-stickcart-edit', woocustomizer_library_get_default( 'wcz-stickcart-edit' ) ) ) :
+		if ( get_option( 'wcz-enable-stickcart', woocustomizer_library_get_default( 'wcz-enable-stickcart' ) ) && get_option( 'wcz-stickcart-edit', woocustomizer_library_get_default( 'wcz-stickcart-edit' ) ) ) :
 			// Sticky Cart Title Size
 			$setting = 'wcz-stickcart-title-size';
 			$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
