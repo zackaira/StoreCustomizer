@@ -262,7 +262,6 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 * Version compatibility bump for WC 6.2
 * Security Improvements
 * PREMIUM: Fixed CSS loading bug on Sticky Add To Cart feature on product page
-* Updated the language .pot file
 
 = 2.3.7 =
 * Frontend & backend styling tweaks/fixes
