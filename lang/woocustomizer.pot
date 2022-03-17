@@ -2,16 +2,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2021-12-13 17:24+0200\n"
+"POT-Creation-Date: 2022-03-17 11:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.0\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:2,1;__ngettext:1,2;"
 "__ngettext_noop:1,2;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
@@ -303,193 +303,191 @@ msgid "Watch our 'getting started' video on how to use StoreCustomizer"
 msgstr ""
 
 #: includes/class-wcz-settings.php:712
-#: includes/customizer/customizer-options.php:1976
-#: includes/customizer/customizer-options.php:1983
-msgid "Account Details"
+msgid "Account"
 msgstr ""
 
-#: includes/class-wcz-settings.php:722 includes/class-wcz.php:275
+#: includes/class-wcz-settings.php:715
+msgid "Upgrade"
+msgstr ""
+
+#: includes/class-wcz-settings.php:716
+msgid "Free Premium Trial"
+msgstr ""
+
+#: includes/class-wcz-settings.php:718
+msgid "Become an Affiliate"
+msgstr ""
+
+#: includes/class-wcz-settings.php:721 includes/class-wcz.php:281
 msgid "Contact Us"
 msgstr ""
 
-#: includes/class-wcz-settings.php:725
+#: includes/class-wcz-settings.php:724
 msgid ""
 "Click here to open the WordPress Customizer and navigate to the -> "
 "StoreCustomizer panel."
 msgstr ""
 
-#: includes/class-wcz-settings.php:726
+#: includes/class-wcz-settings.php:725
 msgid "Customize Your Settings"
 msgstr ""
 
-#: includes/class-wcz-settings.php:757
+#: includes/class-wcz-settings.php:756
 msgid "Cloning of WooCustomizer_API is forbidden."
 msgstr ""
 
-#: includes/class-wcz-settings.php:766
+#: includes/class-wcz-settings.php:765
 msgid "Unserializing instances of WooCustomizer_API is forbidden."
 msgstr ""
 
-#: includes/class-wcz.php:270
+#: includes/class-wcz.php:276
 msgid "Show The Tour"
 msgstr ""
 
-#: includes/class-wcz.php:271
+#: includes/class-wcz.php:277
 msgid "Turn Tour Off"
 msgstr ""
 
-#: includes/class-wcz.php:272
+#: includes/class-wcz.php:278
 msgid "Previous Tip"
 msgstr ""
 
-#: includes/class-wcz.php:273
+#: includes/class-wcz.php:279
 msgid "Next Tip"
 msgstr ""
 
-#: includes/class-wcz.php:274
+#: includes/class-wcz.php:280
 msgid "Turn on the Premium settings"
 msgstr ""
 
-#: includes/class-wcz.php:301
+#: includes/class-wcz.php:307
 msgid "Welcome to StoreCustomizer!"
 msgstr ""
 
-#: includes/class-wcz.php:302
+#: includes/class-wcz.php:308
 msgid ""
 "We hope you enjoy using the plugin to further customize your WooCommerce "
 "pages. - PLEASE NOTE... Some settings might not display perfectly, depending "
 "on which theme you're using. - You can always contact us for help on this."
 msgstr ""
 
-#: includes/class-wcz.php:307
+#: includes/class-wcz.php:313
 msgid "Customize the WooCommerce Pages"
 msgstr ""
 
-#: includes/class-wcz.php:308
+#: includes/class-wcz.php:314
 msgid ""
 "In this group of Customizer panels you can customize the each of the "
 "WooCommerce pages by editing the settings within each section."
 msgstr ""
 
-#: includes/class-wcz.php:313
+#: includes/class-wcz.php:319
 msgid "Plus Account, Cart & Checkout Pages"
 msgstr ""
 
-#: includes/class-wcz.php:314
+#: includes/class-wcz.php:320
 msgid ""
 "After editing the Shop & Product pages, you may want to edit your user "
 "account, cart or checkout pages too."
 msgstr ""
 
-#: includes/class-wcz.php:327
+#: includes/class-wcz.php:333
 msgid "Edit your StoreCustomizer Pro Settings!"
 msgstr ""
 
-#: includes/class-wcz.php:328
+#: includes/class-wcz.php:334
 msgid ""
 "These panels appear as you turn on the pro features you want... The settings "
 "for Catalogue Mode, Product Quick View, Menu Cart and / or Ajax Search are "
 "all found within these panels. - Start Customizing!"
 msgstr ""
 
-#: includes/class-wcz.php:333 includes/class-wcz.php:359
-#: includes/class-wcz.php:384
+#: includes/class-wcz.php:339 includes/class-wcz.php:365
+#: includes/class-wcz.php:390
 msgid "Turn on the Pro Settings"
 msgstr ""
 
-#: includes/class-wcz.php:334 includes/class-wcz.php:360
-#: includes/class-wcz.php:385
+#: includes/class-wcz.php:340 includes/class-wcz.php:366
+#: includes/class-wcz.php:391
 msgid ""
 "Follow this link to turn on the pro settings. - Or Navigate to WooCommerce -"
 "> StoreCustomizer in your Dashboard."
 msgstr ""
 
-#: includes/class-wcz.php:339 includes/class-wcz.php:365
-#: includes/class-wcz.php:390
+#: includes/class-wcz.php:345 includes/class-wcz.php:371
+#: includes/class-wcz.php:396
 msgid "Need Help?"
 msgstr ""
 
-#: includes/class-wcz.php:340 includes/class-wcz.php:366
-#: includes/class-wcz.php:391
+#: includes/class-wcz.php:346 includes/class-wcz.php:372
+#: includes/class-wcz.php:397
 msgid "Get in Contact here - Premium users get prioritized support."
 msgstr ""
 
-#: includes/class-wcz.php:345 includes/class-wcz.php:398
+#: includes/class-wcz.php:351 includes/class-wcz.php:404
 msgid "Don't forget to save!"
 msgstr ""
 
-#: includes/class-wcz.php:346 includes/class-wcz.php:399
+#: includes/class-wcz.php:352 includes/class-wcz.php:405
 msgid ""
 "Once you've  finished configuring your StoreCustomizer settings, make sure "
 "you Publish the new settings."
 msgstr ""
 
-#: includes/class-wcz.php:353 includes/class-wcz.php:378
+#: includes/class-wcz.php:359 includes/class-wcz.php:384
 msgid "Premium Settings get added here"
 msgstr ""
 
-#: includes/class-wcz.php:354 includes/class-wcz.php:379
+#: includes/class-wcz.php:360 includes/class-wcz.php:385
 msgid ""
 "Once you've turned on the pro settings that you want, you'll then see the "
 "new panels appear here for Catalogue Mode, Product Quick View, Menu Cart "
 "and / or Ajax Search"
 msgstr ""
 
-#: includes/class-wcz.php:418
+#: includes/class-wcz.php:423
 msgid "Thank you for trying out StoreCustomizer !"
 msgstr ""
 
-#: includes/class-wcz.php:422
+#: includes/class-wcz.php:426
 #, php-format
-msgid "(Previously known as \"%1$s\")"
+msgid ""
+"Use the coupon \"30SALE22\" to get 30% off any StoreCustomizer license, also "
+"applies to future renewals!"
 msgstr ""
 
-#: includes/class-wcz.php:428
+#: includes/class-wcz.php:432
 msgid "Customize your WooCommerce store."
 msgstr ""
 
-#: includes/class-wcz.php:433
+#: includes/class-wcz.php:437
 #, php-format
 msgid ""
-"StoreCustomizer settings are built into the %1$s -> StoreCustomizer. You can "
-"navigate your way around and edit all the settings live."
+"StoreCustomizer settings are built into the %1$s. You can navigate your way "
+"around and edit all the settings live."
 msgstr ""
 
-#: includes/class-wcz.php:433
+#: includes/class-wcz.php:437
 msgid "WordPress Customizer"
 msgstr ""
 
-#: includes/class-wcz.php:435
-msgid "For more on StoreCustomizer, please see:"
-msgstr ""
-
-#: includes/class-wcz.php:438
+#: includes/class-wcz.php:441
 msgid "StoreCustomizer Admin Page"
 msgstr ""
 
-#: includes/class-wcz.php:443
+#: includes/class-wcz.php:445
 msgid "Try out StoreCustomizer PRO Settings"
 msgstr ""
 
-#: includes/class-wcz.php:449
+#: includes/class-wcz.php:450
 msgid "Have you found a bug?"
-msgstr ""
-
-#: includes/class-wcz.php:449
-msgid "Something not working as expected?"
-msgstr ""
-
-#: includes/class-wcz.php:451
-msgid ""
-"Please take it easy on us if something isn't working, get in contact and "
-"I'll try to fix it right away for you."
 msgstr ""
 
 #: includes/class-wcz.php:455
 #, php-format
 msgid ""
-"%1$s, am here to help, and fix any bugs that come up, manage support & "
-"development, and also adding the new features you want."
+"%1$s, am here to help... I'll fix any bugs that come up, help you with "
+"support & do development of adding any new features you may need."
 msgstr ""
 
 #: includes/class-wcz.php:455
@@ -506,9 +504,8 @@ msgstr ""
 
 #: includes/class-wcz.php:466
 msgid ""
-"If the plugin works well for you or our support was good... giving "
-"StoreCustomizer a nice review would really help with motivation & giving "
-"other users trust in my work."
+"Giving StoreCustomizer a good review would really help with improving "
+"Storecustomizer & giving other users trust in my work."
 msgstr ""
 
 #: includes/class-wcz.php:470
@@ -534,37 +531,37 @@ msgid "Dismiss Notice"
 msgstr ""
 
 #: includes/class-wcz.php:510
-msgid "Limited 50&#37; discount on StoreCustomizer Pro"
+msgid "Limited 30&#37; discount on StoreCustomizer Pro"
 msgstr ""
 
-#: includes/class-wcz.php:514
+#: includes/class-wcz.php:513
 #, php-format
-msgid "%1$s on how to get 50&#37; off StoreCustomizer Pro."
-msgstr ""
-
-#: includes/class-wcz.php:515
 msgid ""
-"This discount applies to all licence types, first purchases and renewals "
-"(forever) of StoreCustomizer Pro."
+"We're running a limited 30% special on StoreCustomizer for all licenses "
+"(applies to first payments and renewals, forever)."
 msgstr ""
 
-#: includes/class-wcz.php:517
-msgid "Purchase StoreCustomizer Pro"
+#: includes/class-wcz.php:516
+msgid "Use the coupon \"30SALE22\" to get your discount now!"
 msgstr ""
 
 #: includes/class-wcz.php:518
-msgid "See All features included in StoreCustomizer Pro"
+msgid "Purchase StoreCustomizer Pro"
 msgstr ""
 
 #: includes/class-wcz.php:519
+msgid "See All features included in StoreCustomizer Pro"
+msgstr ""
+
+#: includes/class-wcz.php:520
 msgid "Dismiss This Notice"
 msgstr ""
 
-#: includes/class-wcz.php:622
+#: includes/class-wcz.php:623
 msgid "Cloning of StoreCustomizer is forbidden"
 msgstr ""
 
-#: includes/class-wcz.php:632
+#: includes/class-wcz.php:633
 msgid "Unserializing instances of StoreCustomizer is forbidden"
 msgstr ""
 
@@ -1517,7 +1514,7 @@ msgid "Dashboard Tab Title"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1827
-#: includes/inc/woocommerce.php:1368
+#: includes/inc/woocommerce.php:1364
 msgid "Dashboard"
 msgstr ""
 
@@ -1550,7 +1547,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1889
 #: includes/customizer/customizer-options.php:1896
-#: includes/inc/woocommerce.php:1401
+#: includes/inc/woocommerce.php:1397
 msgid "Orders"
 msgstr ""
 
@@ -1571,7 +1568,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1918
 #: includes/customizer/customizer-options.php:1925
-#: includes/inc/woocommerce.php:1408
+#: includes/inc/woocommerce.php:1404
 msgid "Downloads"
 msgstr ""
 
@@ -1581,12 +1578,17 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1947
 #: includes/customizer/customizer-options.php:1954
-#: includes/inc/woocommerce.php:1415
+#: includes/inc/woocommerce.php:1411
 msgid "Addresses"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1965
 msgid "Account Details Tab"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:1976
+#: includes/customizer/customizer-options.php:1983
+msgid "Account Details"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1994
@@ -3224,32 +3226,32 @@ msgstr ""
 msgid "Please Upload an Image"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1336 includes/inc/woocommerce.php:1591
-#: includes/inc/woocommerce.php:1615 includes/inc/woocommerce.php:1639
-#: includes/inc/woocommerce.php:1663
+#: includes/inc/woocommerce.php:1332 includes/inc/woocommerce.php:1587
+#: includes/inc/woocommerce.php:1611 includes/inc/woocommerce.php:1635
+#: includes/inc/woocommerce.php:1659
 msgid "Please select the page you'd like to display here."
 msgstr ""
 
-#: includes/inc/woocommerce.php:1422
+#: includes/inc/woocommerce.php:1418
 msgid "Account details"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1684
+#: includes/inc/woocommerce.php:1680
 msgid "Account Tab 1"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1688
+#: includes/inc/woocommerce.php:1684
 msgid "Account Tab 2"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1692
+#: includes/inc/woocommerce.php:1688
 msgid "Account Tab 3"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1696
+#: includes/inc/woocommerce.php:1692
 msgid "Account Tab 4"
 msgstr ""
 
-#: woocustomizer.php:132
+#: woocustomizer.php:130
 msgid "StoreCustomizer requires the WooCommerce plugin to be active to work"
 msgstr ""
