@@ -64,7 +64,7 @@ function wcz_admin_body_class( $admin_classes ) {
     }
 
 	// notif : For a notification if another notice is 'on'
-    if ( current_user_can( 'manage_options' ) && !get_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_1' ) ) {
+    if ( current_user_can( 'manage_options' ) && !get_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_2' ) ) {
         $admin_classes .= ' wcz-notif';
     }
 

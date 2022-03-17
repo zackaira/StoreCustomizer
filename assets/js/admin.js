@@ -17,8 +17,11 @@
     });
 
     // notif : For a notification if another notice is 'on'
-    // if ( jQuery( 'body' ).hasClass( 'wcz-free' ) && jQuery( 'body' ).hasClass( 'wcz-notif' ) ) {
-    //     jQuery( '.wcznotif' ).text( '1' ).addClass( 'hasnotif' );
-    // };
+    if (
+      jQuery("body").hasClass("wcz-free") &&
+      jQuery("body").hasClass("wcz-notif")
+    ) {
+      jQuery(".wcznotif").text("1").addClass("hasnotif");
+    }
   });
 })(jQuery);

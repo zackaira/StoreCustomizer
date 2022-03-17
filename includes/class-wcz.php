@@ -127,10 +127,10 @@ class WooCustomizer {
         add_action( 'admin_notices', array( $this, 'wcz_feedback_notice' ) );
 
 		// notif : For another Admin Notice
-        // if ( ! wcz_fs()->can_use_premium_code__premium_only() ) {
-        //     add_action( 'admin_init', array( $this, 'wcz_quicknote_notice_ignore' ), 0 );
-        //     add_action( 'admin_notices', array( $this, 'wcz_quicknote_notice' ) );
-        // }
+        if ( ! wcz_fs()->can_use_premium_code__premium_only() ) {
+            add_action( 'admin_init', array( $this, 'wcz_quicknote_notice_ignore' ), 0 );
+            add_action( 'admin_notices', array( $this, 'wcz_quicknote_notice' ) );
+        }
 
 		// Load frontend JS & CSS.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 10 );
@@ -420,14 +420,12 @@ class WooCustomizer {
 
 		if ( current_user_can( 'manage_options' ) && !get_user_meta( $wcz_user_id, 'wcz_feedback_notice_dismiss' ) ) : ?>
 			<div class="notice notice-info wcz-admin-notice">
-                <h4>
-                    <?php esc_html_e( 'Thank you for trying out StoreCustomizer !', 'woocustomizer' ); ?>
-                    <span>
-                        <?php
-                        /* translators: 1: 'StoreCustomizer'. */
-                        printf( esc_html__( '(Previously known as "%1$s")', 'woocustomizer' ), wp_kses( '<b>WooCustomizer</b>', array( 'b' => array() ) ) ); ?>
-                    </span>
-                </h4>
+                <h4><?php esc_html_e( 'Thank you for trying out StoreCustomizer !', 'woocustomizer' ); ?></h4>
+				<?php if ( ! wcz_fs()->can_use_premium_code__premium_only() ) : ?>
+					<p class="wcz-admin-special">
+						<?php esc_html_e( 'Use the coupon "30SALE22" to get 30% off any StoreCustomizer license, also applies to future renewals!', 'woocustomizer' ); ?>
+					</p>
+				<?php endif; ?>
 
 				<div class="wcz-notice-columns">
 					<div class="wcz-notice-col">
@@ -436,29 +434,25 @@ class WooCustomizer {
 							<p>
                                 <?php
                                 /* translators: 1: 'WordPress Customizer'. */
-                                printf( esc_html__( 'StoreCustomizer settings are built into the %1$s -> StoreCustomizer. You can navigate your way around and edit all the settings live.', 'woocustomizer' ), wp_kses( '<a href="' . admin_url( 'customize.php' ) . '" class="wcz-admin-notice-a">' . __( 'WordPress Customizer', 'woocustomizer' ) . '</a>', array( 'a' => array( 'href' => array(), 'class' => array() ) ) ) ); ?>
+                                printf( esc_html__( 'StoreCustomizer settings are built into the %1$s. You can navigate your way around and edit all the settings live.', 'woocustomizer' ), wp_kses( '<a href="' . admin_url( 'customize.php' ) . '" class="wcz-admin-notice-a">' . __( 'WordPress Customizer', 'woocustomizer' ) . '</a>', array( 'a' => array( 'href' => array(), 'class' => array() ) ) ) ); ?>
                             </p>
-                            <p><?php esc_html_e( 'For more on StoreCustomizer, please see:', 'woocustomizer' ); ?></p>
 						</div>
 						<a href="<?php echo admin_url( 'admin.php?page=wcz_settings' ); ?>" class="wcz-notice-btn">
 							<?php esc_html_e( 'StoreCustomizer Admin Page', 'woocustomizer' ); ?>
 						</a>
-						<?php
-						if ( ! wcz_fs()->can_use_premium_code__premium_only() ) { ?>
+						<?php if ( ! wcz_fs()->can_use_premium_code__premium_only() ) : ?>
 							<a href="<?php echo esc_url( 'https://storecustomizer.com/go/woocustomizer-settings/' ); ?>" target="_blank" class="wcz-notice-btn">
 								<?php esc_html_e( 'Try out StoreCustomizer PRO Settings', 'woocustomizer' ); ?>
 							</a>
-						<?php
-						} ?>
+						<?php endif; ?>
 					</div>
 					<div class="wcz-notice-col">
-						<h5><?php esc_html_e( 'Have you found a bug?', 'woocustomizer' ); ?><br /><?php esc_html_e( 'Something not working as expected?', 'woocustomizer' ); ?></h5>
+						<h5><?php esc_html_e( 'Have you found a bug?', 'woocustomizer' ); ?></h5>
 						<div class="wcz-notice-cont">
-							<p><?php esc_html_e( 'Please take it easy on us if something isn\'t working, get in contact and I\'ll try to fix it right away for you.', 'woocustomizer' ); ?></p>
 							<p>
 								<?php
 								/* translators: 1: 'giving us a review'. */
-								printf( esc_html__( '%1$s, am here to help, and fix any bugs that come up, manage support & development, and also adding the new features you want.', 'woocustomizer' ), wp_kses( '<a href="https://storecustomizer.com/go/about/" class="wcz-admin-notice-a" target="_blank">' . __( 'I, Zack', 'woocustomizer' ) . '</a>', array( 'a' => array( 'href' => array(), 'class' => array(), 'target' => array() ) ) ) ); ?>
+								printf( esc_html__( '%1$s, am here to help... I\'ll fix any bugs that come up, help you with support & do development of adding any new features you may need.', 'woocustomizer' ), wp_kses( '<a href="https://storecustomizer.com/go/about/" class="wcz-admin-notice-a" target="_blank">' . __( 'I, Zack', 'woocustomizer' ) . '</a>', array( 'a' => array( 'href' => array(), 'class' => array(), 'target' => array() ) ) ) ); ?>
 							</p>
 						</div>
 
@@ -469,7 +463,7 @@ class WooCustomizer {
 					<div class="wcz-notice-col last">
 						<h5><?php esc_html_e( 'Like StoreCustomizer? Give it 5 stars :)', 'woocustomizer' ); ?></h5>
 						<div class="wcz-notice-cont">
-							<p><?php esc_html_e( 'If the plugin works well for you or our support was good... giving StoreCustomizer a nice review would really help with motivation & giving other users trust in my work.', 'woocustomizer' ); ?></p>
+							<p><?php esc_html_e( 'Giving StoreCustomizer a good review would really help with improving Storecustomizer & giving other users trust in my work.', 'woocustomizer' ); ?></p>
                         </div>
                         <div class="wcz-notice-rating-btns">
                             <div class="wcz-notice-rating-btn wcz-notice-rating-click">
@@ -508,21 +502,22 @@ class WooCustomizer {
         $wcz_user_id = $current_user->ID;
         $wczpage = isset( $_GET['page'] ) ? $pagenow . '?page=' . $_GET['page'].'&' : $pagenow.'?';
 
-        if ( current_user_can( 'manage_options' ) && !get_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_1' ) && 'admin.php?page=wcz_settings&' == $wczpage ) : ?>
+        if ( current_user_can( 'manage_options' ) && !get_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_2' ) && 'admin.php?page=wcz_settings&' == $wczpage ) : ?>
             <div class="notice notice-info wcz-admin-notice wcz-price-notice">
                 <h4>
 					<?php
 					// printf( esc_html__( '20&#37; Discount for the month of %1$s !', 'woocustomizer' ), esc_attr( date( "F", strtotime( 'm' ) ) ) );
-					esc_html_e( 'Limited 50&#37; discount on StoreCustomizer Pro', 'woocustomizer' ); ?>
+					esc_html_e( 'Limited 30&#37; discount on StoreCustomizer Pro', 'woocustomizer' ); ?>
                 </h4>
 				<p>
-                    <?php
-					printf( esc_html__( '%1$s on how to get 50&#37; off StoreCustomizer Pro.', 'woocustomizer' ), wp_kses( '<a href="https://storecustomizer.com/limited-offer/" target="_blank">Read more here</a>', array( 'a' => array( 'href' => array (), 'target' => array() ) ) ) ); ?><br />
-					<small><?php esc_html_e( 'This discount applies to all licence types, first purchases and renewals (forever) of StoreCustomizer Pro.', 'woocustomizer' ); ?></small>
-                </p>
+					<?php esc_html_e( 'We\'re running a limited 30% special on StoreCustomizer for all licenses (applies to first payments and renewals, forever).', 'woocustomizer' ); ?>
+				</p>
+				<p class="wcz-admin-special">
+					<?php esc_html_e( 'Use the coupon "30SALE22" to get your discount now!', 'woocustomizer' ); ?>
+				</p>
 				<a href="<?php echo esc_url( admin_url( 'admin.php?billing_cycle=annual&page=wcz_settings-pricing' ) ); ?>"><?php esc_html_e( 'Purchase StoreCustomizer Pro', 'woocustomizer' ); ?></a> &nbsp; | &nbsp; 
 				<a href="<?php echo esc_url( 'https://storecustomizer.com/#anchor-premium' ); ?>" target="_blank"><?php esc_html_e( 'See All features included in StoreCustomizer Pro', 'woocustomizer' ); ?></a> &nbsp; | &nbsp; 
-				<a href="<?php echo esc_url( admin_url( $wczpage . 'wcz_quicknote_notice_dismiss_1' ) ); ?>"><?php esc_html_e( 'Dismiss This Notice', 'woocustomizer' ); ?></a><br /><br />
+				<a href="<?php echo esc_url( admin_url( $wczpage . 'wcz_quicknote_notice_dismiss_2' ) ); ?>"><?php esc_html_e( 'Dismiss This Notice', 'woocustomizer' ); ?></a><br /><br />
             </div><?php
         endif;
     }
@@ -530,8 +525,8 @@ class WooCustomizer {
         global $current_user;
         $wcz_user_id = $current_user->ID;
     
-        if ( isset( $_GET['wcz_quicknote_notice_dismiss_1'] ) ) {
-            update_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_1', true );
+        if ( isset( $_GET['wcz_quicknote_notice_dismiss_2'] ) ) {
+            update_user_meta( $wcz_user_id, 'wcz_quicknote_notice_dismiss_2', true );
         }
     }
 
