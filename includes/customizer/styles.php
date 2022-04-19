@@ -1268,17 +1268,19 @@ function woocustomizer_customizer_library_build_styles() {
 	$setting = 'wcz-cart-ajax-update';
 	$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
 
-	if ( is_cart() && $mod !== woocustomizer_library_get_default( $setting ) ) {
+	if (WooCustomizer::wcz_is_plugin_active( 'woocommerce.php' )) {
+		if ( is_cart() && $mod !== woocustomizer_library_get_default( $setting ) ) {
 
-		WooCustomizer_Library_Styles()->add( array(
-			'selectors' => array(
-				'.woocommerce button[name="update_cart"],
-				.woocommerce input[name="update_cart"]'
-			),
-			'declarations' => array(
-				'display' => 'none !important'
-			)
-		) );
+			WooCustomizer_Library_Styles()->add( array(
+				'selectors' => array(
+					'.woocommerce button[name="update_cart"],
+					.woocommerce input[name="update_cart"]'
+				),
+				'declarations' => array(
+					'display' => 'none !important'
+				)
+			) );
+		}
 	}
 	// Remove Cross Sells heading
 	$setting = 'wcz-wccart-recomm';

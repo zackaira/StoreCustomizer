@@ -316,7 +316,7 @@ body.theme-storefront .woocommerce tr.cart_item dt {
 /* ---- Sold Out Banner ---- */
 .wcz-soldout {
     display: block;
-    z-index: 99;
+    z-index: 11;
 }
 body.wcz-soldout-style-angle .wcz-soldout {
     background-color: red;
