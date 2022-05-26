@@ -19,7 +19,7 @@
 #customize-control-wcz-add-price-prefix .customize-control-description,
 #customize-control-wcz-add-price-suffix .customize-control-description,
 #customize-control-wcz-wc-notice-text .customize-control-description,
-#customize-control-wcz-handheld-footerbar-on .customize-control-description,
+#customize-control-wcz-handheld-only-wc .customize-control-description,
 #customize-control-wcz-heading-wcc-btn .description.customize-control-description,
 #customize-control-wcz-heading-wcc-prod .description.customize-control-description,
 #customize-control-wcz-heading-emptycart .description.customize-control-description,
@@ -210,6 +210,7 @@
 #customize-control-wcz-cart-bts-btn .customize-control-description,
 #customize-control-wcz-cart-show-discamount .customize-control-description,
 #customize-control-wcz-cart-add-productinfo-atts .customize-control-description,
+#customize-control-wcz-handheld-footerbar-on .customize-control-description,
 #customize-control-wcz-direct-checkout .customize-control-description,
 #customize-control-wcz-checkout-add-img .customize-control-description,
 #customize-control-wcz-checkout-show-discamount .customize-control-description,
@@ -361,6 +362,7 @@
 #customize-control-wcz-as-and-tags,
 #customize-control-wcz-as-min-chars,
 #customize-control-wcz-handheld-add-titles,
+#customize-control-wcz-handheld-only-wc,
 #customize-control-wcz-handheld-footerbar-on {
     border-bottom: 1px solid rgba(0, 0, 0, 0.15) !important;
     padding: 0 0 18px !important;

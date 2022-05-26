@@ -1,15 +1,15 @@
 <?php
 /**
  * Plugin Name: StoreCustomizer
- * Version: 2.4.0
+ * Version: 2.4.1
  * Plugin URI: https://kairaweb.com/wordpress-plugins/woocustomizer/
- * Description: A WooCommerce customizer plugin, your answer to editing the WooCommerce store and product pages, cart and checkout pages and also your user account page, all within the WordPress Customizer.
+ * Description: A store customizer plugin for editing your WooCommerce store and product pages, cart and checkout pages and also your user account page, all within the WordPress Customizer.
  * Author: Kaira
  * Author URI: https://kairaweb.com/
  * Requires at least: 5.0
- * Tested up to: 5.9
+ * Tested up to: 6.0
  * WC requires at least: 3.2
- * WC tested up to: 6.4
+ * WC tested up to: 6.5
  * Text Domain: woocustomizer
  * Domain Path: /lang/
  * 
@@ -19,7 +19,7 @@
  * @author Kaira
  * @since 1.0.0
  */
-define( 'WCD_PLUGIN_VERSION', '2.4.0' );
+define( 'WCD_PLUGIN_VERSION', '2.4.1' );
 define( 'WCD_PLUGIN_URL', plugins_url( '', __FILE__ ) );
 
 if ( ! defined( 'ABSPATH' ) ) {

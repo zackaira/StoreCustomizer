@@ -1228,7 +1228,8 @@ function woocustomizer_customizer_library_options() {
             );
         
         // PRO VERSION ONLY
-        } else {
+        }
+        if ( ! wcz_fs()->can_use_premium_code__premium_only() ) {
 
             $options['wcz-stickcart-free-note'] = array(
                 'id' => 'wcz-stickcart-free-note',
@@ -4199,6 +4200,15 @@ function woocustomizer_customizer_library_options() {
                     'choices' => $choices,
                     'description' => __( 'Hint: Change this to "Always On" for easy editing', 'woocustomizer'),
                     'default' => 'wcz-mobile'
+                );
+
+                $options['wcz-handheld-only-wc'] = array(
+                    'id' => 'wcz-handheld-only-wc',
+                    'label'   => __( 'Display only on WooCommerce pages', 'woocustomizer' ),
+                    'section' => $section,
+                    'type'    => 'checkbox',
+                    'description' => __( 'This excludes the Cart & Checkout pages', 'woocustomizer'),
+                    'default' => 0,
                 );
 
                 $options['wcz-handheld-add-titles'] = array(

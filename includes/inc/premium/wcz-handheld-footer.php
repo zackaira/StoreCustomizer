@@ -59,6 +59,8 @@ if ( ! function_exists( 'wcz_woocommerce_cart_count' ) ) {
  * Add Handheld Footer Bar to site.
  */
 function wcz_add_handheld_footer_bar() {
+    if (get_option( 'wcz-handheld-only-wc', woocustomizer_library_get_default( 'wcz-handheld-only-wc' ) ) && !is_woocommerce()) return;
+
     if (is_admin()) return; ?>
     <div class="wcz-handheld-footerbar <?php echo get_option( 'wcz-handheld-footerbar-on', woocustomizer_library_get_default( 'wcz-handheld-footerbar-on' ) ); ?>">
         <div class="wcz-handheld-footerbar-inner">

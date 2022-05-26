@@ -1,14 +1,14 @@
-=== StoreCustomizer - WooCommerce plugin to Customize all WooCommerce Pages ===
+=== StoreCustomizer - A plugin to Customize all WooCommerce Pages ===
 Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce shop, ecommerce, catalogue mode, ajax search, product quick view, custom thank you pages, menu cart
 Requires at least: 5.0
-Tested up to: 5.9
-Stable tag: 2.4.0
+Tested up to: 6.0
+Stable tag: 2.4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customize WooCommerce without code... StoreCustomizer, a free WooCommerce customizer plugin, has all the WooCommerce hooks & lots more features built into one plugin, to further edit your WooCommerce Shop and Product pages, Cart, Checkout and User Account pages.
+Customize your WooCommerce pages without code... StoreCustomizer, a free store customizer plugin, has all the WooCommerce hooks & lots more features built into one plugin, to further edit your WooCommerce Shop and Product pages, Cart, Checkout and User Account pages.
 
 
 == Description ==
@@ -256,6 +256,14 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.4.1 =
+* Styling tweaks/fixes
+* Version compatibility for WP 6.0
+* Updated .org banners to remove logos
+* Settings layout fixes
+* Updated the language .pot file
+* PREMIUM: Added setting to display Handheld Footer Bar only on WooCommerce pages
 
 = 2.4.0 =
 * Styling tweaks/fixes

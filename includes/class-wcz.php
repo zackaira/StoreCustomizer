@@ -423,7 +423,7 @@ class WooCustomizer {
                 <h4><?php esc_html_e( 'Thank you for trying out StoreCustomizer !', 'woocustomizer' ); ?></h4>
 				<?php if ( ! wcz_fs()->can_use_premium_code__premium_only() ) : ?>
 					<p class="wcz-admin-special">
-						<?php esc_html_e( 'Use the coupon "30SALE22" to get 30% off any StoreCustomizer license, also applies to future renewals!', 'woocustomizer' ); ?>
+						<?php esc_html_e( 'Use the coupon "GET50OFFNOW" to get a limited 50% off any StoreCustomizer license (applies to first purchases and all future renewals!)', 'woocustomizer' ); ?>
 					</p>
 				<?php endif; ?>
 
@@ -507,13 +507,13 @@ class WooCustomizer {
                 <h4>
 					<?php
 					// printf( esc_html__( '20&#37; Discount for the month of %1$s !', 'woocustomizer' ), esc_attr( date( "F", strtotime( 'm' ) ) ) );
-					esc_html_e( 'Limited 30&#37; discount on StoreCustomizer Pro', 'woocustomizer' ); ?>
+					esc_html_e( 'Limited 50&#37; discount on StoreCustomizer Pro', 'woocustomizer' ); ?>
                 </h4>
 				<p>
-					<?php esc_html_e( 'We\'re running a limited 30% special on StoreCustomizer for all licenses (applies to first payments and renewals, forever).', 'woocustomizer' ); ?>
+					<?php esc_html_e( 'We\'re running a limited 50% special on StoreCustomizer for all licenses (applies to first payments and renewals, forever).', 'woocustomizer' ); ?>
 				</p>
 				<p class="wcz-admin-special">
-					<?php esc_html_e( 'Use the coupon "30SALE22" to get your discount now!', 'woocustomizer' ); ?>
+					<?php esc_html_e( 'Use the coupon "GET50OFFNOW" to get your discount now!', 'woocustomizer' ); ?>
 				</p>
 				<a href="<?php echo esc_url( admin_url( 'admin.php?billing_cycle=annual&page=wcz_settings-pricing' ) ); ?>"><?php esc_html_e( 'Purchase StoreCustomizer Pro', 'woocustomizer' ); ?></a> &nbsp; | &nbsp; 
 				<a href="<?php echo esc_url( 'https://storecustomizer.com/#anchor-premium' ); ?>" target="_blank"><?php esc_html_e( 'See All features included in StoreCustomizer Pro', 'woocustomizer' ); ?></a> &nbsp; | &nbsp; 
