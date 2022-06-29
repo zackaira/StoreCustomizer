@@ -162,17 +162,10 @@ class WooCustomizer_Settings {
 	 * @return void
 	 */
 	public function settings_assets() {
-
-		// We're including the farbtastic script & styles here because they're needed for the colour picker
-		// If you're not including a colour picker field then you can leave these calls out as well as the farbtastic dependency for the wpt-admin-js script below.
-		wp_enqueue_style( 'farbtastic' );
-		wp_enqueue_script( 'farbtastic' );
-
 		// We're including the WP media scripts here because they're needed for the image upload field.
-		// If you're not including an image upload then you can leave this function call out.
 		wp_enqueue_media();
 
-		wp_register_script( $this->parent->_token . '-settings-js', $this->parent->assets_url . 'js/settings' . $this->parent->script_suffix . '.js', array( 'farbtastic', 'jquery' ), '1.0.0', true );
+		wp_register_script( $this->parent->_token . '-settings-js', $this->parent->assets_url . 'js/settings' . $this->parent->script_suffix . '.js', array( 'jquery' ), '1.0.0', true );
 		wp_enqueue_script( $this->parent->_token . '-settings-js' );
 	}
 
@@ -723,6 +716,7 @@ class WooCustomizer_Settings {
 		$html             .= '</div>' . "\n";
 		$html             .= '<p>' . esc_html( __( 'Click here to open the WordPress Customizer and navigate to the -> StoreCustomizer panel.', 'woocustomizer' ) ) . '</p>' . "\n";
 		$html             .= '<a href="' . esc_url( admin_url( 'customize.php' ) ) . '" class="wcz-customizer-btn">' . esc_html( __( 'Customize Your Settings', 'woocustomizer' ) ) . '</a>' . "\n";
+		$html             .= '<p>' . esc_html( __( 'Reset all settings: Select the option above, then uninstall and re-install the StoreCustomizer plugin.', 'woocustomizer' ) ) . '</p>' . "\n";
 		$html             .= '</div>' . "\n";
 		$html             .= '</div>' . "\n";
 

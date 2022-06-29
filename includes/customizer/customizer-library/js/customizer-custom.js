@@ -378,8 +378,10 @@
         function wcz_product_btn_text() {
             if ( $( '#customize-control-wcz-product-edit-btn input[type=checkbox]' ).is( ':checked' ) ) {
                 $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-button-txt-simple' ).show();
+                $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-btn-redirect-checkout' ).show();
             } else {
                 $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-button-txt-simple' ).hide();
+                $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-btn-redirect-checkout' ).hide();
             }
         }
 

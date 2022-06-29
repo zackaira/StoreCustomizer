@@ -60,7 +60,7 @@ function wcz_add_sticky_atc() {
                     <?php endif; ?>
                 <?php endif; ?>
                 <a class="wcz-sticky-addtocart-button button alt" rel="nofollow">
-                    <?php echo esc_attr( $product->add_to_cart_text() ); ?>
+                    <?php echo get_option( 'wcz-product-edit-btn', woocustomizer_library_get_default( 'wcz-product-edit-btn' ) ) && get_option( 'wcz-product-button-txt-simple', woocustomizer_library_get_default( 'wcz-product-button-txt-simple' ) ) ? esc_attr( get_option( 'wcz-product-button-txt-simple', woocustomizer_library_get_default( 'wcz-product-button-txt-simple' ) ) ) : esc_attr( $product->add_to_cart_text() ); ?>
                 </a>
                 <?php if ( !get_option( 'wcz-stickcart-remimg', woocustomizer_library_get_default( 'wcz-stickcart-remimg' ) ) ) : ?>
                     <?php if ( 'wcz-stickcart-two' == $wczatc_layout ) : ?>

@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce shop, ecommerce, catalogue mode, ajax search, product quick view, custom thank you pages, menu cart
 Requires at least: 5.0
 Tested up to: 6.0
-Stable tag: 2.4.1
+Stable tag: 2.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -256,6 +256,15 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.4.2 =
+* Styling tweaks/fixes
+* Fix uninstall script to remove all plugin data
+* Version compatibility for WC 6.6
+* Removed old deprecated code
+* Updated the language .pot file
+* PREMIUM: Fixed Product Sticky Add to Cart button to take on button text changes
+* PREMIUM: Added option to change product page 'Add to Cart' redirect to go straight to checkout
 
 = 2.4.1 =
 * Styling tweaks/fixes

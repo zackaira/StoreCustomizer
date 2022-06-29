@@ -936,7 +936,7 @@ function woocustomizer_customizer_library_options() {
 
         $options['wcz-product-edit-btn'] = array(
             'id' => 'wcz-product-edit-btn',
-            'label'   => __( 'Edit Product Button Text', 'woocustomizer' ),
+            'label'   => __( 'Edit Product Page Button', 'woocustomizer' ),
             'section' => $section,
             'type'    => 'checkbox',
             'default' => 0,
@@ -948,6 +948,18 @@ function woocustomizer_customizer_library_options() {
             'type'    => 'text',
             'default' => __( 'Add to cart', 'woocustomizer'),
         );
+        if ( wcz_fs()->can_use_premium_code__premium_only() ) {
+            if ('yes' == get_option('woocommerce_cart_redirect_after_add')) {
+                $options['wcz-product-btn-redirect-checkout'] = array(
+                    'id' => 'wcz-product-btn-redirect-checkout',
+                    'label'   => __( 'Redirect to checkout after \'Add to Cart\'', 'woocustomizer' ),
+                    'section' => $section,
+                    'type'    => 'checkbox',
+                    'default' => 0,
+                );
+            }
+        }
+
         $options['wcz-remove-product-sku'] = array(
             'id' => 'wcz-remove-product-sku',
             'label'   => __( 'Remove SKU', 'woocustomizer' ),

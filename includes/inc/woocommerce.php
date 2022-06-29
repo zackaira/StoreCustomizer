@@ -497,7 +497,7 @@ function wcz_stock_availability_text( $availability ) {
 function wcz_sale_banner_text() {
 	global $woocommerce_loop;
 
-	if ( is_product() ) {
+	if ( $woocommerce_loop && is_product() ) {
 		if ( $woocommerce_loop['name'] == 'related' ) {
 			$setting = 'wcz-shop-sale-txt';
 		} else {
@@ -1532,7 +1532,6 @@ add_filter( 'woocommerce_login_redirect', 'wcz_customer_login_redirect', 999, 2 
 
 // Only Available in StoreCustomizer Pro
 if ( wcz_fs()->can_use_premium_code__premium_only() ) {
-
 	/**
 	 * ------------------------------------------------------------------------------------ Add New Account Tabs.
 	 * Register new endpoint.
@@ -1714,6 +1713,18 @@ if ( wcz_fs()->can_use_premium_code__premium_only() ) {
 	 */
 
 	/**
+	 * ----------------------- Change Add to Cart redirect.
+	 */
+	function wcz_product_add_to_cart_redirect($url) {
+		if ( is_shop() || is_product_category() || is_product_tag() ) return $url;
+
+		if ( 'yes' == get_option('woocommerce_cart_redirect_after_add') && get_option( 'wcz-product-edit-btn', woocustomizer_library_get_default( 'wcz-product-edit-btn' ) ) && get_option( 'wcz-product-btn-redirect-checkout', woocustomizer_library_get_default( 'wcz-product-btn-redirect-checkout' ) ) ) {
+			$url = wc_get_checkout_url();
+		}
+		return $url;
+	}
+	add_filter( 'woocommerce_add_to_cart_redirect', 'wcz_product_add_to_cart_redirect', 10, 2 );
+	/**
 	 * ----------------------- Direct Checkout Settings.
 	 */
 	if ( get_option( 'wcz-direct-checkout', woocustomizer_library_get_default( 'wcz-direct-checkout' ) ) ) {
@@ -1738,6 +1749,7 @@ if ( wcz_fs()->can_use_premium_code__premium_only() ) {
 			wp_redirect( $wcz_url ); // Redirects to Checkout Page
 			exit;
 		}
+		
 		if ( is_checkout() && get_option( 'wcz-directcheckout-disable-cartout', woocustomizer_library_get_default( 'wcz-directcheckout-disable-cartout' ) ) ) {
 			if ( 0 == WC()->cart->get_cart_contents_count() && ! is_wc_endpoint_url( 'order-pay' ) && ! is_wc_endpoint_url( 'order-received' ) ) {
 				$wczredirectid = get_option( 'wcz-directcheckout-disabled-redirect', woocustomizer_library_get_default( 'wcz-directcheckout-disabled-redirect' ) );

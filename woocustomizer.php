@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: StoreCustomizer
- * Version: 2.4.1
+ * Version: 2.4.2
  * Plugin URI: https://kairaweb.com/wordpress-plugins/woocustomizer/
  * Description: A store customizer plugin for editing your WooCommerce store and product pages, cart and checkout pages and also your user account page, all within the WordPress Customizer.
  * Author: Kaira
@@ -9,7 +9,7 @@
  * Requires at least: 5.0
  * Tested up to: 6.0
  * WC requires at least: 3.2
- * WC tested up to: 6.5
+ * WC tested up to: 6.6
  * Text Domain: woocustomizer
  * Domain Path: /lang/
  * 
@@ -19,7 +19,7 @@
  * @author Kaira
  * @since 1.0.0
  */
-define( 'WCD_PLUGIN_VERSION', '2.4.1' );
+define( 'WCD_PLUGIN_VERSION', '2.4.2' );
 define( 'WCD_PLUGIN_URL', plugins_url( '', __FILE__ ) );
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -132,6 +132,24 @@ if ( function_exists( 'wcz_fs' ) ) {
         }
         add_action( 'admin_notices', 'wcz_no_woocommerce_notice' );
         return;
+    }
+
+    /**
+     * Function to delete all StoreCustomizer data IF set
+     */
+    function wcz_fs_uninstall_cleanup( $section ) {
+		global $wpdb;
+		// Delete all data if setting to delete data is checked
+		if ( 'on' == get_option( 'wcz_set_data_to_delete' ) ) {
+			// Delete all Linkt db options.
+			$wpdb->query( "DELETE FROM $wpdb->options WHERE option_name LIKE 'wcz_%';" );
+			$wpdb->query( "DELETE FROM $wpdb->options WHERE option_name LIKE 'wcz-%';" );
+			// Clear any cached data that has been removed.
+			wp_cache_flush();
+		}
+	}
+    if ( 'on' == get_option( 'wcz_set_data_to_delete' ) ) {
+        wcz_fs()->add_action('after_uninstall', 'wcz_fs_uninstall_cleanup');
     }
 
     /**
