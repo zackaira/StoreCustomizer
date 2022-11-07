@@ -2824,6 +2824,13 @@ function woocustomizer_customizer_library_options() {
             'type'    => 'url',
         );
 
+        $options['wcz-checkout-remove-coupon'] = array(
+            'id' => 'wcz-checkout-remove-coupon',
+            'label'   => __( 'Remove Coupons form', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'checkbox',
+            'default' => 0,
+        );
         $options['wcz-checkout-edit-coupon-txt'] = array(
             'id' => 'wcz-checkout-edit-coupon-txt',
             'label'   => __( 'Edit Coupon Section Text', 'woocustomizer' ),

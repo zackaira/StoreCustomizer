@@ -226,6 +226,10 @@ function wcz_wc_texts() {
 		add_filter( 'gettext', 'wcz_edit_cart_coupon_text', 20, 3 );
 	}
 
+	if (is_checkout() && get_option('wcz-checkout-remove-coupon', woocustomizer_library_get_default('wcz-checkout-remove-coupon'))) {
+		add_filter( 'woocommerce_coupons_enabled', 'wcz_remove_checkput_coupon' );
+	}
+
 	// Edit 'Create an account' text
 	if ( !is_user_logged_in() && is_checkout() && 'yes' == get_option( 'woocommerce_enable_signup_and_login_from_checkout' ) && get_option( 'wcz-checkout-edit-createaccount', woocustomizer_library_get_default( 'wcz-checkout-edit-createaccount' ) ) ) {
 		add_filter( 'gettext', 'woocommerce_edit_createaccount_text' );
@@ -575,6 +579,12 @@ function wcz_edit_cart_coupon_text($translated_text, $text, $domain) {
 			break;
     }
     return $translated_text;
+}
+function wcz_remove_checkput_coupon($enabled) {
+    if ( is_checkout() ) {
+        $enabled = false;
+    }
+    return $enabled;
 }
 // Add Sold Out banner to sold out products
 function wcz_add_soldout_to_shop() {

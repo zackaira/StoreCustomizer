@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2022-11-07 11:20+0200\n"
+"POT-Creation-Date: 2022-11-07 11:31+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -219,7 +219,7 @@ msgid "Select which Menu to add a Menu Cart to"
 msgstr ""
 
 #: includes/class-wcz-settings.php:391
-#: includes/customizer/customizer-options.php:3617
+#: includes/customizer/customizer-options.php:3624
 msgid "Enable Product Quick View"
 msgstr ""
 
@@ -661,14 +661,14 @@ msgid ""
 msgstr ""
 
 #: includes/customizer/customizer-options.php:162
-#: includes/customizer/customizer-options.php:4302
-#: includes/customizer/customizer-options.php:4305
-#: includes/customizer/customizer-options.php:4359
-#: includes/customizer/customizer-options.php:4362
-#: includes/customizer/customizer-options.php:4416
-#: includes/customizer/customizer-options.php:4419
-#: includes/customizer/customizer-options.php:4473
-#: includes/customizer/customizer-options.php:4476
+#: includes/customizer/customizer-options.php:4309
+#: includes/customizer/customizer-options.php:4312
+#: includes/customizer/customizer-options.php:4366
+#: includes/customizer/customizer-options.php:4369
+#: includes/customizer/customizer-options.php:4423
+#: includes/customizer/customizer-options.php:4426
+#: includes/customizer/customizer-options.php:4480
+#: includes/customizer/customizer-options.php:4483
 #: includes/inc/premium/wcz-product-badges.php:987
 msgid "Title"
 msgstr ""
@@ -681,7 +681,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:1864
 #: includes/customizer/customizer-options.php:2361
 #: includes/customizer/customizer-options.php:2498
-#: includes/customizer/customizer-options.php:2912
+#: includes/customizer/customizer-options.php:2919
 msgid "Text"
 msgstr ""
 
@@ -729,7 +729,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:273
 #: includes/customizer/customizer-options.php:1201
-#: includes/customizer/customizer-options.php:4562
+#: includes/customizer/customizer-options.php:4569
 msgid "Title Size"
 msgstr ""
 
@@ -744,7 +744,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:307
 #: includes/customizer/customizer-options.php:2789
-#: includes/customizer/customizer-options.php:3394
+#: includes/customizer/customizer-options.php:3401
 msgid "Notice Color"
 msgstr ""
 
@@ -754,7 +754,7 @@ msgid "Max Width"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:329
-#: includes/customizer/customizer-options.php:3812
+#: includes/customizer/customizer-options.php:3819
 msgid "Bottom Margin"
 msgstr ""
 
@@ -935,7 +935,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:584
 #: includes/customizer/customizer-options.php:1637
 #: includes/customizer/customizer-options.php:2584
-#: includes/customizer/customizer-options.php:3024
+#: includes/customizer/customizer-options.php:3031
 msgid "Design Elements"
 msgstr ""
 
@@ -963,10 +963,10 @@ msgstr ""
 #: includes/customizer/customizer-options.php:1761
 #: includes/customizer/customizer-options.php:2528
 #: includes/customizer/customizer-options.php:2646
-#: includes/customizer/customizer-options.php:3047
-#: includes/customizer/customizer-options.php:3145
-#: includes/customizer/customizer-options.php:3409
-#: includes/customizer/customizer-options.php:4110
+#: includes/customizer/customizer-options.php:3054
+#: includes/customizer/customizer-options.php:3152
+#: includes/customizer/customizer-options.php:3416
+#: includes/customizer/customizer-options.php:4117
 msgid "Font Size"
 msgstr ""
 
@@ -1006,7 +1006,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:743
 #: includes/customizer/customizer-options.php:2570
 #: includes/customizer/customizer-options.php:2660
-#: includes/customizer/customizer-options.php:3061
+#: includes/customizer/customizer-options.php:3068
 msgid "Padding"
 msgstr ""
 
@@ -1015,7 +1015,7 @@ msgid "Customize Sale Banner"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:721
-#: includes/customizer/customizer-options.php:4144
+#: includes/customizer/customizer-options.php:4151
 msgid "Sale Banner Color"
 msgstr ""
 
@@ -1035,9 +1035,9 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2608
 #: includes/customizer/customizer-options.php:2680
 #: includes/customizer/customizer-options.php:2796
-#: includes/customizer/customizer-options.php:2926
-#: includes/customizer/customizer-options.php:3081
-#: includes/customizer/customizer-options.php:4589
+#: includes/customizer/customizer-options.php:2933
+#: includes/customizer/customizer-options.php:3088
+#: includes/customizer/customizer-options.php:4596
 msgid "Font Color"
 msgstr ""
 
@@ -1156,12 +1156,12 @@ msgid "Remove SKU"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:972
-#: includes/customizer/customizer-options.php:3745
+#: includes/customizer/customizer-options.php:3752
 msgid "Remove Product Categories"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:979
-#: includes/customizer/customizer-options.php:3752
+#: includes/customizer/customizer-options.php:3759
 msgid "Remove Product Tags"
 msgstr ""
 
@@ -1315,12 +1315,12 @@ msgid "Layout"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1179
-#: includes/customizer/customizer-options.php:4032
+#: includes/customizer/customizer-options.php:4039
 msgid "Remove Image"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1186
-#: includes/customizer/customizer-options.php:3710
+#: includes/customizer/customizer-options.php:3717
 msgid "Remove Price"
 msgstr ""
 
@@ -1334,9 +1334,9 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2541
 #: includes/customizer/customizer-options.php:2601
 #: includes/customizer/customizer-options.php:2673
-#: includes/customizer/customizer-options.php:2919
-#: includes/customizer/customizer-options.php:3074
-#: includes/customizer/customizer-options.php:4582
+#: includes/customizer/customizer-options.php:2926
+#: includes/customizer/customizer-options.php:3081
+#: includes/customizer/customizer-options.php:4589
 msgid "Background Color"
 msgstr ""
 
@@ -1524,7 +1524,7 @@ msgid "Dashboard Tab Title"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1840
-#: includes/inc/woocommerce.php:1379
+#: includes/inc/woocommerce.php:1389
 msgid "Dashboard"
 msgstr ""
 
@@ -1543,7 +1543,7 @@ msgid ""
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1877
-#: includes/customizer/customizer-options.php:4321
+#: includes/customizer/customizer-options.php:4328
 msgid "Select Page"
 msgstr ""
 
@@ -1557,7 +1557,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1902
 #: includes/customizer/customizer-options.php:1909
-#: includes/inc/woocommerce.php:1412
+#: includes/inc/woocommerce.php:1422
 msgid "Orders"
 msgstr ""
 
@@ -1578,7 +1578,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1931
 #: includes/customizer/customizer-options.php:1938
-#: includes/inc/woocommerce.php:1419
+#: includes/inc/woocommerce.php:1429
 msgid "Downloads"
 msgstr ""
 
@@ -1588,7 +1588,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1960
 #: includes/customizer/customizer-options.php:1967
-#: includes/inc/woocommerce.php:1426
+#: includes/inc/woocommerce.php:1436
 msgid "Addresses"
 msgstr ""
 
@@ -1670,6 +1670,7 @@ msgid "Cart Page"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2181
+#: includes/customizer/customizer-options.php:2829
 msgid "Remove Coupons form"
 msgstr ""
 
@@ -1688,8 +1689,8 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2202
 #: includes/customizer/customizer-options.php:2286
 #: includes/customizer/customizer-options.php:2638
-#: includes/customizer/customizer-options.php:3039
-#: includes/customizer/customizer-options.php:3767
+#: includes/customizer/customizer-options.php:3046
+#: includes/customizer/customizer-options.php:3774
 msgid "Button Text"
 msgstr ""
 
@@ -1771,7 +1772,7 @@ msgid "Back to Shop"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2297
-#: includes/customizer/customizer-options.php:3629
+#: includes/customizer/customizer-options.php:3636
 msgid "Button Type"
 msgstr ""
 
@@ -1783,7 +1784,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2555
 #: includes/customizer/customizer-options.php:2615
 #: includes/customizer/customizer-options.php:2687
-#: includes/customizer/customizer-options.php:3088
+#: includes/customizer/customizer-options.php:3095
 msgid "Hover Color"
 msgstr ""
 
@@ -1796,19 +1797,19 @@ msgid "Button Alignment"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2353
-#: includes/customizer/customizer-options.php:2904
+#: includes/customizer/customizer-options.php:2911
 msgid "Show Discount / Amount Saved"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2356
-#: includes/customizer/customizer-options.php:2907
+#: includes/customizer/customizer-options.php:2914
 msgid ""
 "This will display the total amount a user saves when purchasing products On "
 "Sale!"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2364
-#: includes/customizer/customizer-options.php:2915
+#: includes/customizer/customizer-options.php:2922
 msgid "You Save!"
 msgstr ""
 
@@ -1889,7 +1890,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2562
 #: includes/customizer/customizer-options.php:2622
 #: includes/customizer/customizer-options.php:2694
-#: includes/customizer/customizer-options.php:3095
+#: includes/customizer/customizer-options.php:3102
 msgid "Hover Font Color"
 msgstr ""
 
@@ -1972,7 +1973,7 @@ msgid "Once you turn this on, go to Checkout again to see it in action."
 msgstr ""
 
 #: includes/customizer/customizer-options.php:2782
-#: includes/customizer/customizer-options.php:3375
+#: includes/customizer/customizer-options.php:3382
 msgid "Notice Text"
 msgstr ""
 
@@ -1988,796 +1989,796 @@ msgid ""
 "for this feature."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2829
+#: includes/customizer/customizer-options.php:2836
 msgid "Edit Coupon Section Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2836
+#: includes/customizer/customizer-options.php:2843
 msgid "Coupon Code Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2839
+#: includes/customizer/customizer-options.php:2846
 msgid "Have a coupon?"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2843
+#: includes/customizer/customizer-options.php:2850
 msgid "Coupon Code Link Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2846
+#: includes/customizer/customizer-options.php:2853
 msgid "Click here to enter your code"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2850
+#: includes/customizer/customizer-options.php:2857
 msgid "Coupon Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2853
+#: includes/customizer/customizer-options.php:2860
 msgid "If you have a coupon code, please apply it below."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2858
+#: includes/customizer/customizer-options.php:2865
 msgid "Edit Order Notes Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2865
+#: includes/customizer/customizer-options.php:2872
 msgid "Label Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2868
+#: includes/customizer/customizer-options.php:2875
 msgid "Order notes"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2872
+#: includes/customizer/customizer-options.php:2879
 msgid "Placeholder Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2875
+#: includes/customizer/customizer-options.php:2882
 msgid "Notes about your order, e.g. special notes for delivery."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2880
+#: includes/customizer/customizer-options.php:2887
 msgid "Add Custom Image"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2883
+#: includes/customizer/customizer-options.php:2890
 msgid "This can be used to ensure that the site is secure for your users."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2888
+#: includes/customizer/customizer-options.php:2895
 msgid "Upload Image"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2891
+#: includes/customizer/customizer-options.php:2898
 msgid "Upload this image at the correct size."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2896
+#: includes/customizer/customizer-options.php:2903
 msgid "Center Image"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2934
+#: includes/customizer/customizer-options.php:2941
 msgid "Add Text under Place Order button"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2941
+#: includes/customizer/customizer-options.php:2948
 msgid "Custom Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2944
+#: includes/customizer/customizer-options.php:2951
 msgid "This will only show up once you refresh and/or go to the Checkout page."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2945
+#: includes/customizer/customizer-options.php:2952
 msgid ""
 "Your personal data will help us create your account and to support your user "
 "experience throughout this website. Please have a look at our Privacy Policy "
 "for more information on how we use your personal data"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2950
+#: includes/customizer/customizer-options.php:2957
 msgid "Remove Checkout Fields"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2953
+#: includes/customizer/customizer-options.php:2960
 msgid ""
 "Depending on your theme, the removal of these settings might not work. Edit "
 "these settings and then check the site front-end to see if they work."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2957
+#: includes/customizer/customizer-options.php:2964
 msgid "Remove Last Name"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2964
+#: includes/customizer/customizer-options.php:2971
 msgid "Remove Company Name"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2971
+#: includes/customizer/customizer-options.php:2978
 msgid "Remove Address"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2978
+#: includes/customizer/customizer-options.php:2985
 msgid "Remove Town / City"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2985
+#: includes/customizer/customizer-options.php:2992
 msgid "Remove State / Province & Zip Code"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2992
+#: includes/customizer/customizer-options.php:2999
 msgid "Remove Phone Number"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:2999
+#: includes/customizer/customizer-options.php:3006
 msgid "Remove Order Notes"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3002
+#: includes/customizer/customizer-options.php:3009
 msgid "Edit <a href=\""
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3009
+#: includes/customizer/customizer-options.php:3016
 msgid "Edit 'Create an account?' Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3018
+#: includes/customizer/customizer-options.php:3025
 msgid "Create an account?"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3027
+#: includes/customizer/customizer-options.php:3034
 msgid ""
 "This button should be designed by the theme. We try offer extra "
 "customization for this button. If this doesn't work, please get in contact "
 "for help."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3032
+#: includes/customizer/customizer-options.php:3039
 msgid "Customize the \"Place Order\" button"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3042
+#: includes/customizer/customizer-options.php:3049
 msgid "Place Order"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3103
+#: includes/customizer/customizer-options.php:3110
 msgid "Customize checkout details headings"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3112
+#: includes/customizer/customizer-options.php:3119
 msgid ""
 "Note: These settings use more memory so we suggest only doing this if you "
 "need to."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3116
+#: includes/customizer/customizer-options.php:3123
 msgid "'Billing' heading"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3119
+#: includes/customizer/customizer-options.php:3126
 msgid "Billing details"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3123
+#: includes/customizer/customizer-options.php:3130
 msgid "'Additional information' heading"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3126
+#: includes/customizer/customizer-options.php:3133
 msgid "Additional information"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3130
+#: includes/customizer/customizer-options.php:3137
 msgid "'Shipping' heading"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3133
+#: includes/customizer/customizer-options.php:3140
 msgid "Ship to a different address?"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3137
+#: includes/customizer/customizer-options.php:3144
 msgid "'Your Order' heading"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3140
+#: includes/customizer/customizer-options.php:3147
 msgid "Your Order"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3158
+#: includes/customizer/customizer-options.php:3165
 msgid "Headings Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3175
+#: includes/customizer/customizer-options.php:3182
 msgid "WC Catalogue Mode"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3188
+#: includes/customizer/customizer-options.php:3195
 msgid "Catalogue Mode For:"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3197
+#: includes/customizer/customizer-options.php:3204
 msgid "Apply all to ONLY Logged Out users"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3200
+#: includes/customizer/customizer-options.php:3207
 msgid ""
 "All Changes for Catalogue Mode are now only happening for users NOT LOGGED "
 "IN.<br /><br />Please logout to see the changes."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3206
+#: includes/customizer/customizer-options.php:3213
 msgid "Edit All Products"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3212
+#: includes/customizer/customizer-options.php:3219
 msgid "Edit Selected Products"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3218
-#: includes/customizer/customizer-options.php:3291
+#: includes/customizer/customizer-options.php:3225
+#: includes/customizer/customizer-options.php:3298
 msgid "Remove Shop Page Buttons"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3231
+#: includes/customizer/customizer-options.php:3238
 msgid "Shop Page Price"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3239
-#: includes/customizer/customizer-options.php:3268
-#: includes/customizer/customizer-options.php:3311
-#: includes/customizer/customizer-options.php:3339
+#: includes/customizer/customizer-options.php:3246
+#: includes/customizer/customizer-options.php:3275
+#: includes/customizer/customizer-options.php:3318
+#: includes/customizer/customizer-options.php:3346
 msgid "Price Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3242
-#: includes/customizer/customizer-options.php:3314
+#: includes/customizer/customizer-options.php:3249
+#: includes/customizer/customizer-options.php:3321
 msgid "View Product"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3247
-#: includes/customizer/customizer-options.php:3319
+#: includes/customizer/customizer-options.php:3254
+#: includes/customizer/customizer-options.php:3326
 msgid "Remove Product Page Buttons"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3260
+#: includes/customizer/customizer-options.php:3267
 msgid "Product Page Price"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3271
+#: includes/customizer/customizer-options.php:3278
 msgid "Product Currently Unavailable"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3276
+#: includes/customizer/customizer-options.php:3283
 msgid "Show Product ID's for Administrators"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3283
+#: includes/customizer/customizer-options.php:3290
 msgid "Selected Product ID's"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3286
+#: includes/customizer/customizer-options.php:3293
 msgid ""
 "Enter the ID's of the selected products, separated by a comma(,).<br />Eg: "
 "38, 40, 41"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3303
+#: includes/customizer/customizer-options.php:3310
 msgid "Selected Shop Page Price"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3331
+#: includes/customizer/customizer-options.php:3338
 msgid "Selected Product Price"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3342
+#: includes/customizer/customizer-options.php:3349
 msgid "Product Coming Soon"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3347
+#: includes/customizer/customizer-options.php:3354
 msgid "Cart & Checkout Pages"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3353
+#: includes/customizer/customizer-options.php:3360
 msgid "Hide Cart & Checkout Pages"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3362
+#: includes/customizer/customizer-options.php:3369
 msgid "Catalogue Mode Notice"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3368
+#: includes/customizer/customizer-options.php:3375
 msgid "Turn on Catalogue Mode Notice"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3378
+#: includes/customizer/customizer-options.php:3385
 msgid "Our store is temporarily closed for maintenance... Come back soon!"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3386
+#: includes/customizer/customizer-options.php:3393
 msgid "Notice Style"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3401
+#: includes/customizer/customizer-options.php:3408
 msgid "Notice Font Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3430
+#: includes/customizer/customizer-options.php:3437
 msgid "WC Menu Cart"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3438
+#: includes/customizer/customizer-options.php:3445
 msgid "Remove the Theme Cart"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3445
+#: includes/customizer/customizer-options.php:3452
 msgid "Show ONLY on WooCommerce pages"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3452
+#: includes/customizer/customizer-options.php:3459
 msgid "Show ONLY if cart has items"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3455
+#: includes/customizer/customizer-options.php:3462
 msgid "Please open the site is a new tab to see this work"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3460
+#: includes/customizer/customizer-options.php:3467
 msgid "Add Menu Cart - Mini Cart"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3467
+#: includes/customizer/customizer-options.php:3474
 msgid "Remove Mini Cart Product Links"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3474
+#: includes/customizer/customizer-options.php:3481
 msgid "Remove 'View Cart' button"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3486
+#: includes/customizer/customizer-options.php:3493
 msgid "Mini Cart Alignment"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3503
+#: includes/customizer/customizer-options.php:3510
 msgid "Cart Icon"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3507
+#: includes/customizer/customizer-options.php:3514
 msgid ""
 "These 2 options will only show when you save and open the site again in a "
 "new tab."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3512
+#: includes/customizer/customizer-options.php:3519
 msgid "Icon Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3527
+#: includes/customizer/customizer-options.php:3534
 msgid "Menu Cart Display"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3536
+#: includes/customizer/customizer-options.php:3543
 msgid "Align Menu Cart - Right"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3545
+#: includes/customizer/customizer-options.php:3552
 msgid "Menu Cart Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3551
+#: includes/customizer/customizer-options.php:3558
 msgid "Edit Menu Cart Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3559
+#: includes/customizer/customizer-options.php:3566
 msgid "Cart 'Has Items' Icon Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3567
+#: includes/customizer/customizer-options.php:3574
 msgid "Cart Icon Size"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3581
+#: includes/customizer/customizer-options.php:3588
 msgid "Cart Widget Background Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3588
+#: includes/customizer/customizer-options.php:3595
 msgid "Cart Widget Button Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3595
+#: includes/customizer/customizer-options.php:3602
 msgid "Cart Widget Button:hover Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3610
+#: includes/customizer/customizer-options.php:3617
 msgid "WC Product Quick View"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3637
+#: includes/customizer/customizer-options.php:3644
 msgid "Quick View Button Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3640
+#: includes/customizer/customizer-options.php:3647
 msgid "Quick View"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3645
+#: includes/customizer/customizer-options.php:3652
 msgid "Enable Quick View on Blocks & Shortcodes"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3648
+#: includes/customizer/customizer-options.php:3655
 msgid ""
 "If you're building pages with WooCommerce blocks then turn this on to apply "
 "Product Quick View to the blocks too"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3655
+#: includes/customizer/customizer-options.php:3662
 msgid "Apply Catalogue Mode settings to popup"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3672
+#: includes/customizer/customizer-options.php:3679
 msgid "Popup Animation"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3681
+#: includes/customizer/customizer-options.php:3688
 msgid "Stay on Shop after item added to cart"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3689
-#: includes/customizer/customizer-options.php:4046
+#: includes/customizer/customizer-options.php:3696
+#: includes/customizer/customizer-options.php:4053
 msgid "Remove Sale Banner"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3696
+#: includes/customizer/customizer-options.php:3703
 msgid "Remove Title"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3703
+#: includes/customizer/customizer-options.php:3710
 msgid "Remove Rating"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3717
-#: includes/customizer/customizer-options.php:4039
+#: includes/customizer/customizer-options.php:3724
+#: includes/customizer/customizer-options.php:4046
 msgid "Remove Short Description"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3724
+#: includes/customizer/customizer-options.php:3731
 msgid "Add Product Long Description"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3731
+#: includes/customizer/customizer-options.php:3738
 msgid "Remove 'Add To Cart' Section"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3738
+#: includes/customizer/customizer-options.php:3745
 msgid "Remove Product Sku"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3760
+#: includes/customizer/customizer-options.php:3767
 msgid "Add Button Link To Product Page"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3770
+#: includes/customizer/customizer-options.php:3777
 msgid "View Product Page"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3776
+#: includes/customizer/customizer-options.php:3783
 msgid "Quick View Popup Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3784
+#: includes/customizer/customizer-options.php:3791
 msgid "Button Top Spacing"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3798
+#: includes/customizer/customizer-options.php:3805
 msgid "Link Bottom Spacing"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3826
+#: includes/customizer/customizer-options.php:3833
 msgid "Edit the Popup Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3834
+#: includes/customizer/customizer-options.php:3841
 msgid "Popup Max-Width"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3848
+#: includes/customizer/customizer-options.php:3855
 msgid "Popup Image Size/Width"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3861
+#: includes/customizer/customizer-options.php:3868
 msgid "Vertically Center Align Image & Summary"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3868
+#: includes/customizer/customizer-options.php:3875
 msgid "Background Overlay Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3876
+#: includes/customizer/customizer-options.php:3883
 msgid "Background Overlay Opacity"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3889
+#: includes/customizer/customizer-options.php:3896
 msgid "Popup Background Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3896
+#: includes/customizer/customizer-options.php:3903
 msgid "Remove Popup Border"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3911
+#: includes/customizer/customizer-options.php:3918
 msgid "WC Ajax Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3918
+#: includes/customizer/customizer-options.php:3925
 msgid "Add Ajax Search to Shop Page"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3921
+#: includes/customizer/customizer-options.php:3928
 msgid ""
 "Add an <a href=\"https://storecustomizer.com/documentation/ajax-search-by-"
 "shortcode/\" target=\"_blank\">ajax search via shortcode</a>"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3932
+#: includes/customizer/customizer-options.php:3939
 msgid "Search Through:"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3941
+#: includes/customizer/customizer-options.php:3948
 msgid "Add Product Category Titles to Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3948
+#: includes/customizer/customizer-options.php:3955
 msgid "Add Product Tag Titles to Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3956
+#: includes/customizer/customizer-options.php:3963
 msgid "Character Count to start Ajax Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3964
+#: includes/customizer/customizer-options.php:3971
 msgid "Search Placeholder Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3967
+#: includes/customizer/customizer-options.php:3974
 msgid "Search For Products"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3977
+#: includes/customizer/customizer-options.php:3984
 msgid "Search Button"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3985
+#: includes/customizer/customizer-options.php:3992
 msgid "Search Button Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3988
-#: includes/customizer/customizer-options.php:4533
+#: includes/customizer/customizer-options.php:3995
+#: includes/customizer/customizer-options.php:4540
 #: includes/inc/premium/wcz-handheld-footer.php:83
 msgid "Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:3992
-#: includes/customizer/customizer-options.php:4537
+#: includes/customizer/customizer-options.php:3999
+#: includes/customizer/customizer-options.php:4544
 msgid "Remove Search Button"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4008
+#: includes/customizer/customizer-options.php:4015
+#: includes/customizer/customizer-options.php:4301
+#: includes/customizer/customizer-options.php:4358
+#: includes/customizer/customizer-options.php:4415
+#: includes/customizer/customizer-options.php:4472
+msgid "Icon"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4025
+msgid "Search Results"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4031
+msgid "Maximum Results to Show"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4060
+msgid "Remove Sold Out banner"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4067
+msgid "Remove Categories"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4079
+msgid "Order Results by"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4091
+msgid "Order"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4101
+msgid "Ajax Search Design"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4107
+msgid "Edit Ajax Search Design"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4130
+msgid "Search Background Color"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4137
+msgid "Search Button Color"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4144
+msgid "Search Results Background Color"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4160
+msgid "Search Box Padding"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4175
+msgid "Search Box Max-Width"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4190
+msgid "Search Box Top Spacing"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4204
+msgid "Search Box Bottom Spacing"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4225
+msgid "WC Handheld Footer Bar"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4231
+msgid "Mobile"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4232
+msgid "Tablet"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4233
+msgid "Always On"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4237
+msgid "When to show the Handheld Footer Bar"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4241
+msgid "Hint: Change this to \"Always On\" for easy editing"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4247
+msgid "Display only on WooCommerce pages"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4250
+msgid "This excludes the Cart & Checkout pages"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4256
+msgid "Add Page Titles"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4264
+msgid "Remove Account Link"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4271
+msgid "Remove Search"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4278
+msgid "Remove Cart Link"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4285
+msgid "Add Number of Items to Cart"
+msgstr ""
+
 #: includes/customizer/customizer-options.php:4294
 #: includes/customizer/customizer-options.php:4351
 #: includes/customizer/customizer-options.php:4408
 #: includes/customizer/customizer-options.php:4465
-msgid "Icon"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4018
-msgid "Search Results"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4024
-msgid "Maximum Results to Show"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4053
-msgid "Remove Sold Out banner"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4060
-msgid "Remove Categories"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4072
-msgid "Order Results by"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4084
-msgid "Order"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4094
-msgid "Ajax Search Design"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4100
-msgid "Edit Ajax Search Design"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4123
-msgid "Search Background Color"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4130
-msgid "Search Button Color"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4137
-msgid "Search Results Background Color"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4153
-msgid "Search Box Padding"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4168
-msgid "Search Box Max-Width"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4183
-msgid "Search Box Top Spacing"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4197
-msgid "Search Box Bottom Spacing"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4218
-msgid "WC Handheld Footer Bar"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4224
-msgid "Mobile"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4225
-msgid "Tablet"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4226
-msgid "Always On"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4230
-msgid "When to show the Handheld Footer Bar"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4234
-msgid "Hint: Change this to \"Always On\" for easy editing"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4240
-msgid "Display only on WooCommerce pages"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4243
-msgid "This excludes the Cart & Checkout pages"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4249
-msgid "Add Page Titles"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4257
-msgid "Remove Account Link"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4264
-msgid "Remove Search"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4271
-msgid "Remove Cart Link"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4278
-msgid "Add Number of Items to Cart"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4287
-#: includes/customizer/customizer-options.php:4344
-#: includes/customizer/customizer-options.php:4401
-#: includes/customizer/customizer-options.php:4458
 msgid "Add a new Handheld Bar Link"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4297
-#: includes/customizer/customizer-options.php:4354
-#: includes/customizer/customizer-options.php:4411
-#: includes/customizer/customizer-options.php:4468
+#: includes/customizer/customizer-options.php:4304
+#: includes/customizer/customizer-options.php:4361
+#: includes/customizer/customizer-options.php:4418
+#: includes/customizer/customizer-options.php:4475
 msgid "Enter only the name of the <a href=\""
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4298
-#: includes/customizer/customizer-options.php:4355
-#: includes/customizer/customizer-options.php:4412
-#: includes/customizer/customizer-options.php:4469
+#: includes/customizer/customizer-options.php:4305
+#: includes/customizer/customizer-options.php:4362
+#: includes/customizer/customizer-options.php:4419
+#: includes/customizer/customizer-options.php:4476
 msgid "admin-links"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4308
-#: includes/customizer/customizer-options.php:4365
-#: includes/customizer/customizer-options.php:4422
-#: includes/customizer/customizer-options.php:4479
+#: includes/customizer/customizer-options.php:4315
+#: includes/customizer/customizer-options.php:4372
+#: includes/customizer/customizer-options.php:4429
+#: includes/customizer/customizer-options.php:4486
 #: includes/inc/premium/wcz-thank-you-pages.php:67
 msgid "Page"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4309
-#: includes/customizer/customizer-options.php:4366
-#: includes/customizer/customizer-options.php:4423
-#: includes/customizer/customizer-options.php:4480
+#: includes/customizer/customizer-options.php:4316
+#: includes/customizer/customizer-options.php:4373
+#: includes/customizer/customizer-options.php:4430
+#: includes/customizer/customizer-options.php:4487
 msgid "Custom Link"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4313
-#: includes/customizer/customizer-options.php:4370
-#: includes/customizer/customizer-options.php:4427
-#: includes/customizer/customizer-options.php:4484
+#: includes/customizer/customizer-options.php:4320
+#: includes/customizer/customizer-options.php:4377
+#: includes/customizer/customizer-options.php:4434
+#: includes/customizer/customizer-options.php:4491
 msgid "Link to"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4324
-#: includes/customizer/customizer-options.php:4381
-#: includes/customizer/customizer-options.php:4438
-#: includes/customizer/customizer-options.php:4495
+#: includes/customizer/customizer-options.php:4331
+#: includes/customizer/customizer-options.php:4388
+#: includes/customizer/customizer-options.php:4445
+#: includes/customizer/customizer-options.php:4502
 msgid "Select the page you'd like to link to."
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4329
-#: includes/customizer/customizer-options.php:4386
-#: includes/customizer/customizer-options.php:4443
-#: includes/customizer/customizer-options.php:4500
-msgid "Custom Url"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4336
 #: includes/customizer/customizer-options.php:4393
 #: includes/customizer/customizer-options.php:4450
 #: includes/customizer/customizer-options.php:4507
+msgid "Custom Url"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4343
+#: includes/customizer/customizer-options.php:4400
+#: includes/customizer/customizer-options.php:4457
+#: includes/customizer/customizer-options.php:4514
 msgid "Open in a new Tab"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4378
-#: includes/customizer/customizer-options.php:4435
-#: includes/customizer/customizer-options.php:4492
+#: includes/customizer/customizer-options.php:4385
+#: includes/customizer/customizer-options.php:4442
+#: includes/customizer/customizer-options.php:4499
 msgid "Page to link to"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4517
+#: includes/customizer/customizer-options.php:4524
 msgid "Search Options"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4523
+#: includes/customizer/customizer-options.php:4530
 msgid "Use StoreCustomizer Ajax Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4530
+#: includes/customizer/customizer-options.php:4537
 msgid "Search Placehoder Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4547
+#: includes/customizer/customizer-options.php:4554
 msgid "Handheld Footer Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4553
+#: includes/customizer/customizer-options.php:4560
 msgid "Edit Handheld Bar Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4575
+#: includes/customizer/customizer-options.php:4582
 msgid "Titles Text Uppercase"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4596
+#: includes/customizer/customizer-options.php:4603
 msgid "Font Selected Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4604
+#: includes/customizer/customizer-options.php:4611
 msgid "Icon Size"
 msgstr ""
 
@@ -3189,101 +3190,101 @@ msgstr ""
 msgid "Note:"
 msgstr ""
 
-#: includes/inc/woocommerce.php:664
+#: includes/inc/woocommerce.php:674
 msgid "Categories:"
 msgid_plural "Category:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/inc/woocommerce.php:672 includes/inc/woocommerce.php:673
+#: includes/inc/woocommerce.php:682 includes/inc/woocommerce.php:683
 msgid "Full Name"
 msgstr ""
 
-#: includes/inc/woocommerce.php:778
+#: includes/inc/woocommerce.php:788
 msgid "View Product Statistics"
 msgstr ""
 
-#: includes/inc/woocommerce.php:795
+#: includes/inc/woocommerce.php:805
 msgid "product"
 msgstr ""
 
-#: includes/inc/woocommerce.php:799
+#: includes/inc/woocommerce.php:809
 msgid "Total Sales"
 msgstr ""
 
-#: includes/inc/woocommerce.php:823
+#: includes/inc/woocommerce.php:833
 msgid "Recent Sales"
 msgstr ""
 
-#: includes/inc/woocommerce.php:838
+#: includes/inc/woocommerce.php:848
 msgid "View Order"
 msgstr ""
 
-#: includes/inc/woocommerce.php:851
+#: includes/inc/woocommerce.php:861
 msgid "Edit Product"
 msgstr ""
 
-#: includes/inc/woocommerce.php:895
+#: includes/inc/woocommerce.php:905
 msgid "Price Prefix"
 msgstr ""
 
-#: includes/inc/woocommerce.php:898
+#: includes/inc/woocommerce.php:908
 msgid "Override the default price prefix set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:908
+#: includes/inc/woocommerce.php:918
 msgid "Price Suffix"
 msgstr ""
 
-#: includes/inc/woocommerce.php:911
+#: includes/inc/woocommerce.php:921
 msgid "Override the default price suffix set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:921
-msgid "'Continue Shopping' text"
-msgstr ""
-
-#: includes/inc/woocommerce.php:924
-msgid ""
-"Override the default 'Continue Shopping' button text set in the Customizer"
-msgstr ""
-
 #: includes/inc/woocommerce.php:931
-msgid "'Continue Shopping' url"
+msgid "'Continue Shopping' text"
 msgstr ""
 
 #: includes/inc/woocommerce.php:934
 msgid ""
+"Override the default 'Continue Shopping' button text set in the Customizer"
+msgstr ""
+
+#: includes/inc/woocommerce.php:941
+msgid "'Continue Shopping' url"
+msgstr ""
+
+#: includes/inc/woocommerce.php:944
+msgid ""
 "Override the default 'Continue Shopping' button url set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1211
+#: includes/inc/woocommerce.php:1221
 msgid "Please Upload an Image"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1347 includes/inc/woocommerce.php:1601
-#: includes/inc/woocommerce.php:1625 includes/inc/woocommerce.php:1649
-#: includes/inc/woocommerce.php:1673
+#: includes/inc/woocommerce.php:1357 includes/inc/woocommerce.php:1611
+#: includes/inc/woocommerce.php:1635 includes/inc/woocommerce.php:1659
+#: includes/inc/woocommerce.php:1683
 msgid "Please select the page you'd like to display here."
 msgstr ""
 
-#: includes/inc/woocommerce.php:1433
+#: includes/inc/woocommerce.php:1443
 msgid "Account details"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1694
+#: includes/inc/woocommerce.php:1704
 msgid "Account Tab 1"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1698
+#: includes/inc/woocommerce.php:1708
 msgid "Account Tab 2"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1702
+#: includes/inc/woocommerce.php:1712
 msgid "Account Tab 3"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1706
+#: includes/inc/woocommerce.php:1716
 msgid "Account Tab 4"
 msgstr ""
 
