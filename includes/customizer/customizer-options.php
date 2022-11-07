@@ -2183,6 +2183,27 @@ function woocustomizer_customizer_library_options() {
             'type'    => 'checkbox',
             'default' => 0,
         );
+        $options['wcz-cart-edit-coupon'] = array(
+            'id' => 'wcz-cart-edit-coupon',
+            'label'   => __( 'Edit coupon and button text ', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'checkbox',
+            'default' => 0,
+        );
+        $options['wcz-cart-edit-coupon-txt'] = array(
+            'id' => 'wcz-cart-edit-coupon-txt',
+            'label'   => __( 'Input Placeholder Text', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'text',
+            'default' => __( 'Coupon code', 'woocustomizer' ),
+        );
+        $options['wcz-cart-edit-coupon-btntxt'] = array(
+            'id' => 'wcz-cart-edit-coupon-btntxt',
+            'label'   => __( 'Button Text', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'text',
+            'default' => __( 'Apply coupon', 'woocustomizer' ),
+        );
 
         $options['wcz-cart-disable-cart-quantity'] = array(
             'id' => 'wcz-cart-disable-cart-quantity',

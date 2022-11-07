@@ -222,6 +222,10 @@ function wcz_wc_texts() {
 		add_filter( 'gettext', 'woocommerce_edit_checkout_coupon_instruction_text' );
 	}
 
+	if (is_cart() && get_option('wcz-cart-edit-coupon', woocustomizer_library_get_default('wcz-cart-edit-coupon'))) {
+		add_filter( 'gettext', 'wcz_edit_cart_coupon_text', 20, 3 );
+	}
+
 	// Edit 'Create an account' text
 	if ( !is_user_logged_in() && is_checkout() && 'yes' == get_option( 'woocommerce_enable_signup_and_login_from_checkout' ) && get_option( 'wcz-checkout-edit-createaccount', woocustomizer_library_get_default( 'wcz-checkout-edit-createaccount' ) ) ) {
 		add_filter( 'gettext', 'woocommerce_edit_createaccount_text' );
@@ -560,6 +564,17 @@ function woocommerce_edit_checkout_coupon_instruction_text( $translated ) {
 function woocommerce_edit_createaccount_text( $translated ) {
 	$translated = str_ireplace( 'Create an account?', get_option( 'wcz-checkout-createaccount-txt', woocustomizer_library_get_default( 'wcz-checkout-createaccount-txt' ) ), $translated );
 	return $translated;
+}
+function wcz_edit_cart_coupon_text($translated_text, $text, $domain) {
+    switch ( $translated_text ) {
+        case 'Coupon code' :
+            $translated_text = get_option( 'wcz-cart-edit-coupon-txt', woocustomizer_library_get_default( 'wcz-cart-edit-coupon-txt' ) );
+            break;
+		case 'Apply coupon' :
+			$translated_text = get_option( 'wcz-cart-edit-coupon-btntxt', woocustomizer_library_get_default( 'wcz-cart-edit-coupon-btntxt' ) );
+			break;
+    }
+    return $translated_text;
 }
 // Add Sold Out banner to sold out products
 function wcz_add_soldout_to_shop() {

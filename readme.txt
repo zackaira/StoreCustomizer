@@ -1,14 +1,14 @@
 === StoreCustomizer - A plugin to Customize all WooCommerce Pages ===
 Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
-Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce shop, ecommerce, catalogue mode, ajax search, product quick view, custom thank you pages, menu cart
+Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce customizer, ecommerce
 Requires at least: 5.0
-Tested up to: 6.0
-Stable tag: 2.4.4
+Tested up to: 6.1
+Stable tag: 2.4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customize your WooCommerce pages without code... StoreCustomizer, a free store customizer plugin, has all the WooCommerce hooks & lots more features built into one plugin, to further edit your WooCommerce Shop and Product pages, Cart, Checkout and User Account pages.
+Customize your WooCommerce pages without code... StoreCustomizer, a free WooCommerce customizer plugin, has all the WooCommerce hooks available for you to edit your online store & lots more features, all built into one plugin. Easily edit your WooCommerce Shop and Product pages, Cart page, Checkout page and User Account pages.
 
 
 == Description ==
@@ -19,9 +19,9 @@ https://youtu.be/Byr4Lr6qUaY
 
 Are you tired of creating child themes or adding multiple plugins to customize your WooCommerce store?
 
-WooCommerce offers a lot of action and filter hooks to further Customize WooCommerce... the only problem is, you need to add your own custom php code snippets to edit all the different WooCommerce elements.
+WooCommerce offers a lot of action and filter hooks to further customize WooCommerce... the only problem is, you need to add your own custom php code snippets to edit all the different WooCommerce elements.
 
-Introducing [StoreCustomizer](https://storecustomizer.com/go/site/), a free WooCommerce customizer plugin, and your answer to editing the WooCommerce store and product pages, cart and checkout pages and also your user account page.
+Introducing [StoreCustomizer](https://storecustomizer.com/go/site/), a free WooCommerce customizer plugin, and your answer to customizing all WooCommerce store and product pages, cart page, checkout page and also your user account pages.
 
 > StoreCustomizer **Requires** the WooCommerce Plugin to be active
 
@@ -33,11 +33,11 @@ If something does not work, [Get in contact](https://storecustomizer.com/go/cont
 = StoreCustomizer Top Features =
 
 &#9989; **Add Login / Logout menu item** to a selected WP/theme menu area
-&#9989; **Add Product sales statistics for Admin users** on the website front-end
-&#9989; **Customize Shop & Product Pages** by editing or removing elements
+&#9989; **Add Product sales statistics for Admin users** on the WooCommerce shop page
+&#9989; **Customize WooCommerce Shop & Product Pages** by editing or removing elements
 &#9989; **Edit font size and color for WooCommerce Shop & Product pages & Cart/Checkout elements**
-&#9989; **Customize the design of all store buttons** for Shop & Product pages & Cart/Checkout pages
-&#9989; **Edit 'On Sale' banners** text and colors
+&#9989; **Customize the design of all WooCommerce buttons** for Shop & Product pages & Cart/Checkout pages
+&#9989; **Edit 'On Sale' banners** text and colors for WooCommerce products
 &#9989; **Edit User Account tabs** and tab content headings
 &#9989; **Edit or Remove Product Page Tabs** and edit tab headings
 &#9989; **Add a 'Continue Shopping' button** to your store product pages
@@ -45,7 +45,7 @@ If something does not work, [Get in contact](https://storecustomizer.com/go/cont
 &#9989; **Add a 'Back to Shop' button** to your cart page
 &#9989; **Add "New Product" badges** to products created within a specified number of days
 &#9989; **Auto / Ajax Update Cart** when amount is changed on cart page
-&#9989; **Auto Update Cart** when user edits product amounts
+&#9989; **Auto Update WooCommerce Cart** when user edits product amounts
 &#9989; **Edit Cart & Checkout buttons** & add return to shop buttons
 &#9989; Select the **login redirect** page **or logout redirect** page and edit the menu item text
 &#9989; **'Add To Cart' Increments** - Set Min & Max values for 'Add To Cart' inputs, plus the increment value
@@ -251,11 +251,21 @@ Please [contact us](https://storecustomizer.com/go/contact-us/) so we can post a
 = Something doesn't look right or is slightly out in the design?
 This could be from the theme you're using. Again, please [contact us](https://storecustomizer.com/go/contact-us/) so we can post a fix or give you the CSS to fix it.
 
+= Does StoreCustomizer work well with other plugins?
+Yes, it should! There might be a conflict with other WooCommerce customizer plugins such as Booster for WooCommerce, CoDesigner, Customizer for WooCommerce, WooHero or similar plugins as they are also using the same hooks and might override some settings, but we can help so try fix these too.
+
 = Why the name change?
 We've found out we're not really allowed to use the "Woo" prefix, so we've changed the name from "WooCustomizer" to the new name... "StoreCustomizer"... and that still describes exactly what the plugin does!
 
 
 == Changelog ==
+
+= 2.4.5 =
+* Styling tweaks/fixes
+* Version compability for WP 6.1
+* Added setting to edit Cart page coupon input placeholder text
+* Added setting to edit Cart page coupon button text
+* Updated the language .pot file
 
 = 2.4.4 =
 * Styling tweaks/fixes

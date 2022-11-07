@@ -453,6 +453,22 @@
                 $( '#sub-accordion-section-wcz-panel-cart #customize-control-wcz-cart-ajax-update' ).show();
             }
         }
+
+        // Show / Hide Cart Back To Shop Button
+        wcz_wccart_coupon_text();
+        $( '#customize-control-wcz-cart-edit-coupon input[type=checkbox]' ).on( 'change', function() {
+            wcz_wccart_coupon_text();
+        });
+        function wcz_wccart_coupon_text() {
+            if ( $( '#customize-control-wcz-cart-edit-coupon input[type=checkbox]' ).is( ':checked' ) ) {
+                $( '#sub-accordion-section-wcz-panel-cart #customize-control-wcz-cart-edit-coupon-txt' ).show();
+                $( '#sub-accordion-section-wcz-panel-cart #customize-control-wcz-cart-edit-coupon-btntxt' ).show();
+            } else {
+                $( '#sub-accordion-section-wcz-panel-cart #customize-control-wcz-cart-edit-coupon-txt' ).hide();
+                $( '#sub-accordion-section-wcz-panel-cart #customize-control-wcz-cart-edit-coupon-btntxt' ).hide();
+            }
+        }
+
         // Show / Hide Add To Cart Increment Values
         wcz_product_inc_values();
         $( '#customize-control-wcz-set-cart-increment-vals input[type=checkbox]' ).on( 'change', function() {
