@@ -265,6 +265,7 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 * Version compability for WP 6.1
 * Added setting to edit Cart page coupon input placeholder text
 * Added setting to edit Cart page coupon button text
+* Added setting to remove coupons on Checkout page
 * Updated the language .pot file
 
 = 2.4.4 =
