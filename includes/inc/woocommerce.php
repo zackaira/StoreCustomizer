@@ -179,6 +179,7 @@ function wcz_wc_texts() {
 
 		// Edit Sale Banner text
 		add_filter( 'woocommerce_sale_flash', 'wcz_sale_banner_text', 10, 3 );
+		
 	}
 
 	// Stock Availability Text
@@ -440,26 +441,28 @@ function wcz_wc_texts_variable_button() {
 	if ( ! isset( $product ) )
 		return;
 
-	$product_type = $product->get_type();
+	if ($product) {
+		$product_type = $product->get_type();
 
-	switch ( $product_type ) {
-		case "variable":
-			$setting = 'wcz-shop-button-txt-variable';
-			$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
-			return esc_html( $mod );
-			break;
-		case "grouped":
-			$setting = 'wcz-shop-button-txt-grouped';
-			$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
-			return esc_html( $mod );
-			break;
-		case "external":
-			return esc_html( $product->get_button_text() );
-			break;
-		default:
-			$setting = 'wcz-shoplist-button-txt-simple';
-			$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
-			return esc_html( $mod );
+		switch ( $product_type ) {
+			case "variable":
+				$setting = 'wcz-shop-button-txt-variable';
+				$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
+				return esc_html( $mod );
+				break;
+			case "grouped":
+				$setting = 'wcz-shop-button-txt-grouped';
+				$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
+				return esc_html( $mod );
+				break;
+			case "external":
+				return esc_html( $product->get_button_text() );
+				break;
+			default:
+				$setting = 'wcz-shoplist-button-txt-simple';
+				$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
+				return esc_html( $mod );
+		}
 	}
 }
 // Out Of Stock function on Product Page
@@ -502,7 +505,7 @@ function wcz_stock_availability_text( $availability ) {
 }
 
 // Edit Sale Banner text for shop / product pages
-function wcz_sale_banner_text() {
+function wcz_sale_banner_text($html) {
 	global $woocommerce_loop;
 
 	if ( $woocommerce_loop && is_product() ) {
@@ -514,6 +517,9 @@ function wcz_sale_banner_text() {
 	} else {
 		$setting = 'wcz-shop-sale-txt';
 	}
+
+	if (get_option( $setting, woocustomizer_library_get_default( $setting ) ) === "") return $html;
+	
 	$mod = get_option( $setting, woocustomizer_library_get_default( $setting ) );
 	return '<span class="onsale">' . esc_html( $mod ) . '</span>';
 }

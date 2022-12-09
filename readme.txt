@@ -1,10 +1,11 @@
 === StoreCustomizer - A plugin to Customize all WooCommerce Pages ===
 Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
-Tags: woocommerce, customize woocommerce, woocommerce hooks, woocommerce customizer, ecommerce
+Tags: customize woocommerce, ecommerce, woocommerce, woocommerce hooks, woocommerce customizer
 Requires at least: 5.0
 Tested up to: 6.1
-Stable tag: 2.4.5
+Requires PHP: 5.6
+Stable tag: 2.4.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -259,6 +260,13 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.4.6 =
+* Fixed bug editing product loop text with certain themes
+* Update Sale Banner override - Remove text to use default theme banner
+* Added minimum required PHP to readme.txt
+* Updated Freemius SDK
+* Updated the language .pot file
 
 = 2.4.5 =
 * Styling tweaks/fixes

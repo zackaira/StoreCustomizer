@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2022-11-07 11:31+0200\n"
+"POT-Creation-Date: 2022-12-09 11:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -1524,7 +1524,7 @@ msgid "Dashboard Tab Title"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1840
-#: includes/inc/woocommerce.php:1389
+#: includes/inc/woocommerce.php:1395
 msgid "Dashboard"
 msgstr ""
 
@@ -1557,7 +1557,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1902
 #: includes/customizer/customizer-options.php:1909
-#: includes/inc/woocommerce.php:1422
+#: includes/inc/woocommerce.php:1428
 msgid "Orders"
 msgstr ""
 
@@ -1578,7 +1578,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1931
 #: includes/customizer/customizer-options.php:1938
-#: includes/inc/woocommerce.php:1429
+#: includes/inc/woocommerce.php:1435
 msgid "Downloads"
 msgstr ""
 
@@ -1588,7 +1588,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:1960
 #: includes/customizer/customizer-options.php:1967
-#: includes/inc/woocommerce.php:1436
+#: includes/inc/woocommerce.php:1442
 msgid "Addresses"
 msgstr ""
 
@@ -3190,101 +3190,101 @@ msgstr ""
 msgid "Note:"
 msgstr ""
 
-#: includes/inc/woocommerce.php:674
+#: includes/inc/woocommerce.php:680
 msgid "Categories:"
 msgid_plural "Category:"
 msgstr[0] ""
 msgstr[1] ""
 
-#: includes/inc/woocommerce.php:682 includes/inc/woocommerce.php:683
+#: includes/inc/woocommerce.php:688 includes/inc/woocommerce.php:689
 msgid "Full Name"
 msgstr ""
 
-#: includes/inc/woocommerce.php:788
+#: includes/inc/woocommerce.php:794
 msgid "View Product Statistics"
 msgstr ""
 
-#: includes/inc/woocommerce.php:805
+#: includes/inc/woocommerce.php:811
 msgid "product"
 msgstr ""
 
-#: includes/inc/woocommerce.php:809
+#: includes/inc/woocommerce.php:815
 msgid "Total Sales"
 msgstr ""
 
-#: includes/inc/woocommerce.php:833
+#: includes/inc/woocommerce.php:839
 msgid "Recent Sales"
 msgstr ""
 
-#: includes/inc/woocommerce.php:848
+#: includes/inc/woocommerce.php:854
 msgid "View Order"
 msgstr ""
 
-#: includes/inc/woocommerce.php:861
+#: includes/inc/woocommerce.php:867
 msgid "Edit Product"
 msgstr ""
 
-#: includes/inc/woocommerce.php:905
+#: includes/inc/woocommerce.php:911
 msgid "Price Prefix"
 msgstr ""
 
-#: includes/inc/woocommerce.php:908
+#: includes/inc/woocommerce.php:914
 msgid "Override the default price prefix set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:918
+#: includes/inc/woocommerce.php:924
 msgid "Price Suffix"
 msgstr ""
 
-#: includes/inc/woocommerce.php:921
+#: includes/inc/woocommerce.php:927
 msgid "Override the default price suffix set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:931
+#: includes/inc/woocommerce.php:937
 msgid "'Continue Shopping' text"
 msgstr ""
 
-#: includes/inc/woocommerce.php:934
+#: includes/inc/woocommerce.php:940
 msgid ""
 "Override the default 'Continue Shopping' button text set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:941
+#: includes/inc/woocommerce.php:947
 msgid "'Continue Shopping' url"
 msgstr ""
 
-#: includes/inc/woocommerce.php:944
+#: includes/inc/woocommerce.php:950
 msgid ""
 "Override the default 'Continue Shopping' button url set in the Customizer"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1221
+#: includes/inc/woocommerce.php:1227
 msgid "Please Upload an Image"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1357 includes/inc/woocommerce.php:1611
-#: includes/inc/woocommerce.php:1635 includes/inc/woocommerce.php:1659
-#: includes/inc/woocommerce.php:1683
+#: includes/inc/woocommerce.php:1363 includes/inc/woocommerce.php:1617
+#: includes/inc/woocommerce.php:1641 includes/inc/woocommerce.php:1665
+#: includes/inc/woocommerce.php:1689
 msgid "Please select the page you'd like to display here."
 msgstr ""
 
-#: includes/inc/woocommerce.php:1443
+#: includes/inc/woocommerce.php:1449
 msgid "Account details"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1704
+#: includes/inc/woocommerce.php:1710
 msgid "Account Tab 1"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1708
+#: includes/inc/woocommerce.php:1714
 msgid "Account Tab 2"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1712
+#: includes/inc/woocommerce.php:1718
 msgid "Account Tab 3"
 msgstr ""
 
-#: includes/inc/woocommerce.php:1716
+#: includes/inc/woocommerce.php:1722
 msgid "Account Tab 4"
 msgstr ""
 
