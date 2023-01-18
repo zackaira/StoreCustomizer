@@ -934,6 +934,22 @@ function woocustomizer_customizer_library_options() {
             'default' => 0,
         );
 
+        $options['wcz-product-add-qty-suffix'] = array(
+            'id' => 'wcz-product-add-qty-suffix',
+            'label'   => __( 'Add a Quantity Input Suffix', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'checkbox',
+            'default' => 0,
+        );
+        $options['wcz-product-qty-suffix'] = array(
+            'id' => 'wcz-product-qty-suffix',
+            'label'   => __( 'Text', 'woocustomizer' ),
+            'section' => $section,
+            'type'    => 'text',
+            'description' => __( 'Edit the suffix per product under Product Data -> StoreCustomizer on each product.<br /><br />To add a suffix to only certain products, simply add nothing here (and save), then edit the suffix setting on each product.', 'woocustomizer' ),
+            'default' => __( 'Boxes', 'woocustomizer'),
+        );
+
         $options['wcz-product-edit-btn'] = array(
             'id' => 'wcz-product-edit-btn',
             'label'   => __( 'Edit Product Page Button', 'woocustomizer' ),

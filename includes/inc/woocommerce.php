@@ -929,6 +929,19 @@ function wcz_custom_per_product_settings() {
             ) );
         endif;
 
+		if ( get_option( 'wcz-product-add-qty-suffix', woocustomizer_library_get_default( 'wcz-product-add-qty-suffix' ) ) ) :
+            woocommerce_wp_text_input( array(
+                'id'          => 'wcz_pps_qty_suffix',
+                'value'       => get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) ? get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) : '',
+                'type'        => 'text',
+                'label'       => __( 'Quantity Input Suffix', 'woocustomizer' ),
+                'placeholder' => get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) ),
+                'desc_tip'    => true,
+                'description' => __( 'Override the default quantity input suffix set in the Customizer', 'woocustomizer' ),
+                'default' => 0,
+            ) );
+        endif;
+
 		if ( get_option( 'wcz-add-shop-button', woocustomizer_library_get_default( 'wcz-add-shop-button' ) ) ) :
             woocommerce_wp_text_input( array(
                 'id'          => 'wcz_pcs_buttontxt',
@@ -963,6 +976,7 @@ add_action( 'woocommerce_product_data_panels', 'wcz_custom_per_product_settings'
 function wcz_custom_per_product_settings_save_data( $id, $post ) {
     update_post_meta( $id, 'wcz_pps_price_prefix', $_POST['wcz_pps_price_prefix'] );
     update_post_meta( $id, 'wcz_pps_price_suffix', $_POST['wcz_pps_price_suffix'] );
+	update_post_meta( $id, 'wcz_pps_qty_suffix', $_POST['wcz_pps_qty_suffix'] );
 	update_post_meta( $id, 'wcz_pcs_buttontxt', $_POST['wcz_pcs_buttontxt'] );
 	update_post_meta( $id, 'wcz_pcs_buttonurl', $_POST['wcz_pcs_buttonurl'] );
 }
@@ -1019,6 +1033,10 @@ function wcz_wc_extras() {
          get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true ) ||
          get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ) {
         add_filter( 'woocommerce_get_price_html', 'wcz_add_price_prefix_suffix', 99, 2 );
+    }
+
+	if ( is_product() && get_option( 'wcz-product-add-qty-suffix', woocustomizer_library_get_default( 'wcz-product-add-qty-suffix' ) ) && (get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true )) ) {
+        add_filter( 'woocommerce_after_quantity_input_field', 'wcz_add_product_qty_suffix' );
     }
 
 	// if ( get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ) {
@@ -1174,6 +1192,10 @@ function wcz_add_price_prefix_suffix( $price, $product ) {
 	$price = $wcz_price_prefix . $price . $wcz_price_suffix;
 	
     return $price;
+}
+function wcz_add_product_qty_suffix() {
+	$suffix = get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) ? get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) : get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) );
+    echo '<span class="wcz-qty-suffix">' . $suffix . '</span>';
 }
 function wcz_add_product_long_desc() {
 	$wcz_longdesc_mwidth = get_option( 'wcz-longdesc-maxwidth', woocustomizer_library_get_default( 'wcz-longdesc-maxwidth' ) );

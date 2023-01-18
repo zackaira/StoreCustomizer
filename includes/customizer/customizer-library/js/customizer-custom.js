@@ -369,6 +369,18 @@
                 $( '#customize-control-wcz-add-price-suffix .customize-control-description' ).hide();
             }
         }
+        // Show / Hide Qty Input Suffix
+        wcz_product_qtyinput_suffix();
+        $( '#customize-control-wcz-product-add-qty-suffix input[type=checkbox]' ).on( 'change', function() {
+            wcz_product_qtyinput_suffix();
+        });
+        function wcz_product_qtyinput_suffix() {
+            if ( $( '#customize-control-wcz-product-add-qty-suffix input[type=checkbox]' ).is( ':checked' ) ) {
+                $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-qty-suffix' ).show();
+            } else {
+                $( '#sub-accordion-section-wcz-panel-product #customize-control-wcz-product-qty-suffix' ).hide();
+            }
+        }
 
         // Show / Hide Product Status Texts
         wcz_product_btn_text();
