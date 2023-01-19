@@ -320,8 +320,8 @@ function wcz_wc_texts() {
 
 		// Add Plus & Minus buttons & js functionlaity if option is turned on - to Product Single page & js to footer
 		if ( get_option( 'wcz-add-plus-minus-btns', woocustomizer_library_get_default( 'wcz-add-plus-minus-btns' ) ) ) {
-			add_action( 'woocommerce_before_add_to_cart_quantity', 'wcz_add_product_single_minus_btn' );
-			add_action( 'woocommerce_after_add_to_cart_quantity', 'wcz_add_product_single_plus_btn' );
+			add_action( 'woocommerce_before_quantity_input_field', 'wcz_add_product_single_minus_btn' );
+			add_action( 'woocommerce_after_quantity_input_field', 'wcz_add_product_single_plus_btn' );
 			add_action( 'wp_footer', 'wcz_edit_product_single_plus_minus' );
 		}
 	
@@ -1036,7 +1036,7 @@ function wcz_wc_extras() {
     }
 
 	if ( is_product() && get_option( 'wcz-product-add-qty-suffix', woocustomizer_library_get_default( 'wcz-product-add-qty-suffix' ) ) && (get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true )) ) {
-        add_filter( 'woocommerce_after_quantity_input_field', 'wcz_add_product_qty_suffix' );
+        add_filter( 'woocommerce_after_add_to_cart_quantity', 'wcz_add_product_qty_suffix' );
     }
 
 	// if ( get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ) {

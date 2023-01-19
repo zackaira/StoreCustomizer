@@ -572,8 +572,12 @@ a.button.wcz-bts-btn {
 
 /* <fs_premium_only> */
 
+.woocommerce div.product form.cart div.quantity {
+    vertical-align: middle;
+}
 .wcz-qty-suffix {
     display: inline-block;
+    vertical-align: middle;
     margin: 0 12px 0 2px;
     font-size: 0.95em;
 }
