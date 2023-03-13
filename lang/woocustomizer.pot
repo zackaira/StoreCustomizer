@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2023-01-18 16:04+0200\n"
+"POT-Creation-Date: 2023-03-13 11:52+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"

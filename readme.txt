@@ -1,11 +1,11 @@
 === StoreCustomizer - A plugin to Customize all WooCommerce Pages ===
 Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
-Tags: customize woocommerce, ecommerce, woocommerce, woocommerce hooks, woocommerce customizer
+Tags: customize woocommerce, ecommerce, woocommerce, woocommerce customizer, woocommerce addons
 Requires at least: 5.0
 Tested up to: 6.1
 Requires PHP: 5.6
-Stable tag: 2.4.7
+Stable tag: 2.4.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,12 +67,12 @@ If something does not work, [Get in contact](https://storecustomizer.com/go/cont
 
 StoreCustomizer is built to be a fast & lightweight, easy to work with WooCommerce extension for customizing WooCommerce.
 
-With all the settings built into the WordPress Customizer, you can enjoy editing your WooCommerce store visually in the live environment of the Customizer... See your changes happen as you edit.
+With all the settings built into the WordPress Customizer, you can easily customize WooCommerce visually in the live environment of the WP Customizer... See your changes happen as you edit WooCommerce settings.
 
-StoreCustomizer only includes the code that is activated to ensure that StoreCustomizer is lightweight and fast.
+StoreCustomizer only includes the code that is activated to ensure that StoreCustomizer is lightweight and fast for when you customize WooCommerce pages.
 
 
-[WOOCUSTOMIZER PRO](https://storecustomizer.com/go/site/)
+[STORECUSTOMIZER PRO](https://storecustomizer.com/go/pro-features/)
 
 
 **StoreCustomizer does not exclude or offer half premium functionality to try get you to upgrade, all Pro features are standalone to the free version, to enhance WooCommerce even more!**
@@ -261,6 +261,13 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 == Changelog ==
 
+= 2.4.8 =
+* Styling tweaks/fixes
+* Updated broken .org help links
+* Updated the language .pot file
+* Update Freemius SDK 2.5.4
+* PREMIUM: Fix quantity suffix order bug with Product Plus/Minus feature
+
 = 2.4.7 =
 * Styling tweaks/fixes
 * Added missing image for dashboard settings
@@ -271,7 +278,7 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 * Fixed bug editing product loop text with certain themes
 * Update Sale Banner override - Remove text to use default theme banner
 * Added minimum required PHP to readme.txt
-* Updated Freemius SDK
+* Updated Freemius SDK 2.5.3
 * Updated the language .pot file
 
 = 2.4.5 =

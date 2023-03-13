@@ -1035,9 +1035,14 @@ function wcz_wc_extras() {
         add_filter( 'woocommerce_get_price_html', 'wcz_add_price_prefix_suffix', 99, 2 );
     }
 
+	// Product Quantity Suffix
 	if ( is_product() && get_option( 'wcz-product-add-qty-suffix', woocustomizer_library_get_default( 'wcz-product-add-qty-suffix' ) ) && (get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true )) ) {
-        add_filter( 'woocommerce_after_add_to_cart_quantity', 'wcz_add_product_qty_suffix' );
-    }
+		if ( get_option( 'wcz-add-plus-minus-btns', woocustomizer_library_get_default( 'wcz-add-plus-minus-btns' ) ) ) {
+			add_filter( 'woocommerce_after_quantity_input_field', 'wcz_add_product_qty_suffix' );
+		} else {
+			add_filter( 'woocommerce_after_add_to_cart_quantity', 'wcz_add_product_qty_suffix' );
+		}
+	}
 
 	// if ( get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) || get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ) {
     //     add_filter( 'woocommerce_get_price_suffix', 'wcz_product_price_suffix', 99, 4 );
@@ -1195,7 +1200,8 @@ function wcz_add_price_prefix_suffix( $price, $product ) {
 }
 function wcz_add_product_qty_suffix() {
 	$suffix = get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) ? get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) : get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) );
-    echo '<span class="wcz-qty-suffix">' . $suffix . '</span>';
+	$align = get_option( 'wcz-add-plus-minus-btns', woocustomizer_library_get_default( 'wcz-add-plus-minus-btns' ) ) ? 'nofloat' : '';
+    echo '<span class="wcz-qty-suffix ' . $align . '">' . $suffix . '</span>';
 }
 function wcz_add_product_long_desc() {
 	$wcz_longdesc_mwidth = get_option( 'wcz-longdesc-maxwidth', woocustomizer_library_get_default( 'wcz-longdesc-maxwidth' ) );
