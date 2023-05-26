@@ -5,7 +5,7 @@ Tags: customize woocommerce, ecommerce, woocommerce, woocommerce customizer, woo
 Requires at least: 5.0
 Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 2.5.0
+Stable tag: 2.5.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -260,6 +260,12 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.1 =
+* Styling tweaks/fixes
+* Version compatibility for WC 7.7
+* Update Freemius SDK 2.5.8
+* Updated the language .pot file
 
 = 2.5.0 =
 * Version compatibility for WC 7.5 & WP 6.2

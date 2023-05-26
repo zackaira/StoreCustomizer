@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2023-03-30 08:09+0200\n"
+"POT-Creation-Date: 2023-05-15 11:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:2,1;__ngettext:1,2;"
@@ -458,7 +458,7 @@ msgstr ""
 #: includes/class-wcz.php:426
 #, php-format
 msgid ""
-"Use the coupon \"GET50OFFNOW\" to get a limited 50% off any StoreCustomizer "
+"Use the coupon \"GET35OFFNOW\" to get a limited 35% off any StoreCustomizer "
 "license (applies to first purchases and all future renewals!)"
 msgstr ""
 
@@ -537,18 +537,18 @@ msgid "Dismiss Notice"
 msgstr ""
 
 #: includes/class-wcz.php:510
-msgid "Limited 50&#37; discount on StoreCustomizer Pro"
+msgid "NEW 35&#37; discount on StoreCustomizer Pro"
 msgstr ""
 
 #: includes/class-wcz.php:513
 #, php-format
 msgid ""
-"We're running a limited 50% special on StoreCustomizer for all licenses "
-"(applies to first payments and renewals, forever)."
+"We're running a new 35% special on StoreCustomizer for all licenses for this "
+"month (applies to first payments and renewals, forever)."
 msgstr ""
 
 #: includes/class-wcz.php:516
-msgid "Use the coupon \"GET50OFFNOW\" to get your discount now!"
+msgid "Use the coupon \"GET35OFFNOW\" to get your discount now!"
 msgstr ""
 
 #: includes/class-wcz.php:518
@@ -3027,8 +3027,8 @@ msgstr ""
 
 #: includes/inc/premium/wcz-product-badges.php:463
 msgid ""
-"<a href=\"https://storecustomizer.com/#anchor-contact\" target=\"_blank"
-"\">Contact Us</a>"
+"<a href=\"https://storecustomizer.com/#anchor-contact\" "
+"target=\"_blank\">Contact Us</a>"
 msgstr ""
 
 #: includes/inc/premium/wcz-product-badges.php:474
