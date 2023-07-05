@@ -1,11 +1,11 @@
 === StoreCustomizer - A plugin to Customize all WooCommerce Pages ===
 Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
-Tags: customize woocommerce, ecommerce, woocommerce, woocommerce customizer, woocommerce addons
+Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce addons
 Requires at least: 5.0
 Tested up to: 6.2
 Requires PHP: 5.6
-Stable tag: 2.5.1
+Stable tag: 2.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,15 +18,15 @@ Customize your WooCommerce pages without code... StoreCustomizer, a free WooComm
 
 https://youtu.be/Byr4Lr6qUaY
 
-Are you tired of creating child themes or adding multiple plugins to customize your WooCommerce store?
+Are you tired of creating child themes or adding multiple plugins to customize your WooCommerce ecommerce store?
 
 WooCommerce offers a lot of action and filter hooks to further customize WooCommerce... the only problem is, you need to add your own custom php code snippets to edit all the different WooCommerce elements.
 
 Introducing [StoreCustomizer](https://storecustomizer.com/go/site/), a free WooCommerce customizer plugin, and your answer to customizing all WooCommerce store and product pages, cart page, checkout page and also your user account pages.
 
-> StoreCustomizer **Requires** the WooCommerce Plugin to be active
+> StoreCustomizer **Requires** the WooCommerce Plugin to be active on your ecommerce store
 
-**StoreCustomizer DOES NOT override the WooCommerce templates**, the plugin simply adds extra design options and advanced shop functionality to your existing WooCommerce pages which are designed by the theme you are using.
+**StoreCustomizer DOES NOT override WooCommerce templates**, the plugin simply adds extra design options, WooCommerce addons and advanced shop functionality to your existing ecommerce pages which are designed by the theme you are using.
 
 If something does not work, [Get in contact](https://storecustomizer.com/go/contact-us/) and we'll help as best we can.
 
@@ -260,6 +260,12 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.2 =
+* Styling tweaks/fixes
+* Updated plugin tags
+* Minor security & bug fixes
+* Update Freemius SDK 2.5.10
 
 = 2.5.1 =
 * Styling tweaks/fixes
