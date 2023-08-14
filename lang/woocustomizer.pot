@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WooCustomizer\n"
-"POT-Creation-Date: 2023-05-15 11:09+0200\n"
+"POT-Creation-Date: 2023-08-14 11:01+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: Kaira\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 3.3.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_x:1,2c;_n:2,1;__ngettext:1,2;"
@@ -456,7 +456,7 @@ msgid "Thank you for trying out StoreCustomizer !"
 msgstr ""
 
 #: includes/class-wcz.php:426
-#, php-format
+#, no-php-format
 msgid ""
 "Use the coupon \"GET35OFFNOW\" to get a limited 35% off any StoreCustomizer "
 "license (applies to first purchases and all future renewals!)"
@@ -541,7 +541,7 @@ msgid "NEW 35&#37; discount on StoreCustomizer Pro"
 msgstr ""
 
 #: includes/class-wcz.php:513
-#, php-format
+#, no-php-format
 msgid ""
 "We're running a new 35% special on StoreCustomizer for all licenses for this "
 "month (applies to first payments and renewals, forever)."
@@ -661,14 +661,14 @@ msgid ""
 msgstr ""
 
 #: includes/customizer/customizer-options.php:162
-#: includes/customizer/customizer-options.php:4325
-#: includes/customizer/customizer-options.php:4328
-#: includes/customizer/customizer-options.php:4382
-#: includes/customizer/customizer-options.php:4385
-#: includes/customizer/customizer-options.php:4439
-#: includes/customizer/customizer-options.php:4442
-#: includes/customizer/customizer-options.php:4496
-#: includes/customizer/customizer-options.php:4499
+#: includes/customizer/customizer-options.php:4326
+#: includes/customizer/customizer-options.php:4329
+#: includes/customizer/customizer-options.php:4383
+#: includes/customizer/customizer-options.php:4386
+#: includes/customizer/customizer-options.php:4440
+#: includes/customizer/customizer-options.php:4443
+#: includes/customizer/customizer-options.php:4497
+#: includes/customizer/customizer-options.php:4500
 #: includes/inc/premium/wcz-product-badges.php:987
 msgid "Title"
 msgstr ""
@@ -730,7 +730,7 @@ msgstr ""
 
 #: includes/customizer/customizer-options.php:273
 #: includes/customizer/customizer-options.php:1217
-#: includes/customizer/customizer-options.php:4585
+#: includes/customizer/customizer-options.php:4606
 msgid "Title Size"
 msgstr ""
 
@@ -1038,7 +1038,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2812
 #: includes/customizer/customizer-options.php:2949
 #: includes/customizer/customizer-options.php:3104
-#: includes/customizer/customizer-options.php:4612
+#: includes/customizer/customizer-options.php:4633
 msgid "Font Color"
 msgstr ""
 
@@ -1346,7 +1346,7 @@ msgstr ""
 #: includes/customizer/customizer-options.php:2689
 #: includes/customizer/customizer-options.php:2942
 #: includes/customizer/customizer-options.php:3097
-#: includes/customizer/customizer-options.php:4605
+#: includes/customizer/customizer-options.php:4626
 msgid "Background Color"
 msgstr ""
 
@@ -1553,7 +1553,7 @@ msgid ""
 msgstr ""
 
 #: includes/customizer/customizer-options.php:1893
-#: includes/customizer/customizer-options.php:4344
+#: includes/customizer/customizer-options.php:4345
 msgid "Select Page"
 msgstr ""
 
@@ -2560,21 +2560,21 @@ msgid "Search Button Text"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4011
-#: includes/customizer/customizer-options.php:4556
+#: includes/customizer/customizer-options.php:4577
 #: includes/inc/premium/wcz-handheld-footer.php:83
 msgid "Search"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4015
-#: includes/customizer/customizer-options.php:4560
+#: includes/customizer/customizer-options.php:4581
 msgid "Remove Search Button"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4031
-#: includes/customizer/customizer-options.php:4317
-#: includes/customizer/customizer-options.php:4374
-#: includes/customizer/customizer-options.php:4431
-#: includes/customizer/customizer-options.php:4488
+#: includes/customizer/customizer-options.php:4318
+#: includes/customizer/customizer-options.php:4375
+#: includes/customizer/customizer-options.php:4432
+#: includes/customizer/customizer-options.php:4489
 msgid "Icon"
 msgstr ""
 
@@ -2682,113 +2682,129 @@ msgstr ""
 msgid "Remove Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4294
+#: includes/customizer/customizer-options.php:4295
 msgid "Remove Cart Link"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4301
+#: includes/customizer/customizer-options.php:4302
 msgid "Add Number of Items to Cart"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4310
-#: includes/customizer/customizer-options.php:4367
-#: includes/customizer/customizer-options.php:4424
-#: includes/customizer/customizer-options.php:4481
+#: includes/customizer/customizer-options.php:4311
+#: includes/customizer/customizer-options.php:4368
+#: includes/customizer/customizer-options.php:4425
+#: includes/customizer/customizer-options.php:4482
 msgid "Add a new Handheld Bar Link"
-msgstr ""
-
-#: includes/customizer/customizer-options.php:4320
-#: includes/customizer/customizer-options.php:4377
-#: includes/customizer/customizer-options.php:4434
-#: includes/customizer/customizer-options.php:4491
-msgid "Enter only the name of the <a href=\""
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4321
 #: includes/customizer/customizer-options.php:4378
 #: includes/customizer/customizer-options.php:4435
 #: includes/customizer/customizer-options.php:4492
-msgid "admin-links"
+msgid "Enter only the name of the <a href=\""
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4331
-#: includes/customizer/customizer-options.php:4388
-#: includes/customizer/customizer-options.php:4445
-#: includes/customizer/customizer-options.php:4502
-#: includes/inc/premium/wcz-thank-you-pages.php:67
-msgid "Page"
+#: includes/customizer/customizer-options.php:4322
+#: includes/customizer/customizer-options.php:4379
+#: includes/customizer/customizer-options.php:4436
+#: includes/customizer/customizer-options.php:4493
+msgid "admin-links"
 msgstr ""
 
 #: includes/customizer/customizer-options.php:4332
 #: includes/customizer/customizer-options.php:4389
 #: includes/customizer/customizer-options.php:4446
 #: includes/customizer/customizer-options.php:4503
+#: includes/inc/premium/wcz-thank-you-pages.php:67
+msgid "Page"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4333
+#: includes/customizer/customizer-options.php:4390
+#: includes/customizer/customizer-options.php:4447
+#: includes/customizer/customizer-options.php:4504
 msgid "Custom Link"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4336
-#: includes/customizer/customizer-options.php:4393
-#: includes/customizer/customizer-options.php:4450
-#: includes/customizer/customizer-options.php:4507
+#: includes/customizer/customizer-options.php:4337
+#: includes/customizer/customizer-options.php:4394
+#: includes/customizer/customizer-options.php:4451
+#: includes/customizer/customizer-options.php:4508
 msgid "Link to"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4347
-#: includes/customizer/customizer-options.php:4404
-#: includes/customizer/customizer-options.php:4461
-#: includes/customizer/customizer-options.php:4518
+#: includes/customizer/customizer-options.php:4348
+#: includes/customizer/customizer-options.php:4405
+#: includes/customizer/customizer-options.php:4462
+#: includes/customizer/customizer-options.php:4519
 msgid "Select the page you'd like to link to."
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4352
-#: includes/customizer/customizer-options.php:4409
-#: includes/customizer/customizer-options.php:4466
-#: includes/customizer/customizer-options.php:4523
+#: includes/customizer/customizer-options.php:4353
+#: includes/customizer/customizer-options.php:4410
+#: includes/customizer/customizer-options.php:4467
+#: includes/customizer/customizer-options.php:4524
 msgid "Custom Url"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4359
-#: includes/customizer/customizer-options.php:4416
-#: includes/customizer/customizer-options.php:4473
-#: includes/customizer/customizer-options.php:4530
+#: includes/customizer/customizer-options.php:4360
+#: includes/customizer/customizer-options.php:4417
+#: includes/customizer/customizer-options.php:4474
+#: includes/customizer/customizer-options.php:4531
 msgid "Open in a new Tab"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4401
-#: includes/customizer/customizer-options.php:4458
-#: includes/customizer/customizer-options.php:4515
+#: includes/customizer/customizer-options.php:4402
+#: includes/customizer/customizer-options.php:4459
+#: includes/customizer/customizer-options.php:4516
 msgid "Page to link to"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4540
+#: includes/customizer/customizer-options.php:4538
+msgid "Default WP Search"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4539
+msgid "Add Shortcode Search"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4543
+msgid "Show Search:"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4551
+msgid "Shortcode:"
+msgstr ""
+
+#: includes/customizer/customizer-options.php:4561
 msgid "Search Options"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4546
+#: includes/customizer/customizer-options.php:4567
 msgid "Use StoreCustomizer Ajax Search"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4553
+#: includes/customizer/customizer-options.php:4574
 msgid "Search Placehoder Text"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4570
+#: includes/customizer/customizer-options.php:4591
 msgid "Handheld Footer Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4576
+#: includes/customizer/customizer-options.php:4597
 msgid "Edit Handheld Bar Design"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4598
+#: includes/customizer/customizer-options.php:4619
 msgid "Titles Text Uppercase"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4619
+#: includes/customizer/customizer-options.php:4640
 msgid "Font Selected Color"
 msgstr ""
 
-#: includes/customizer/customizer-options.php:4627
+#: includes/customizer/customizer-options.php:4648
 msgid "Icon Size"
 msgstr ""
 
@@ -2854,7 +2870,7 @@ msgid "Use these shortcodes to display discount amounts:"
 msgstr ""
 
 #: includes/inc/premium/wcz-product-badges.php:262
-#, php-format
+#, no-php-format
 msgid ""
 "This badge preview on the right will use 10% for [percent] and $10 for "
 "[amount] as an example."
@@ -3306,6 +3322,6 @@ msgstr ""
 msgid "Account Tab 4"
 msgstr ""
 
-#: woocustomizer.php:130
+#: woocustomizer.php:137
 msgid "StoreCustomizer requires the WooCommerce plugin to be active to work"
 msgstr ""

@@ -4,6 +4,19 @@
 ( function( $ ) {
     $( document ).ready( function () {
 
+        wcz_handheld_showsearch_select();
+        $( '#customize-control-wcz-handheld-search-display select' ).on( 'change', function() {
+            wcz_handheld_showsearch_select();
+        });
+        function wcz_handheld_showsearch_select() {
+            if ( 'default' == $( '#customize-control-wcz-handheld-search-display select' ).val() ) {
+                console.log('ONE', $( '#customize-control-wcz-handheld-search-display select' ).val());
+                $( '#sub-accordion-section-wcz-panel-wcz-handheld-fb #customize-control-wcz-handheld-search-shortcode' ).hide();
+            } else {
+                console.log('TWOOO', $( '#customize-control-wcz-handheld-search-display select' ).val());
+                $( '#sub-accordion-section-wcz-panel-wcz-handheld-fb #customize-control-wcz-handheld-search-shortcode' ).show();
+            }
+        }
         // Custom Link - One
         wcz_handheld_fb_link_one();
         $( '#customize-control-wcz-add-handheld-link-one input[type=checkbox]' ).on( 'change', function() {

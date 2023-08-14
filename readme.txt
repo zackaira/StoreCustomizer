@@ -3,9 +3,9 @@ Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce addons
 Requires at least: 5.0
-Tested up to: 6.2
+Tested up to: 6.3
 Requires PHP: 5.6
-Stable tag: 2.5.2
+Stable tag: 2.5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -260,6 +260,13 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.3 =
+* Styling tweaks/fixes
+* Added compatibility & declaration for WC HPOS feature
+* Version compatibility for WP 6.3 & WC 8.0
+* Updated the language .pot file
+* PREMIUM: Added Handheld Footer Bar option to replace search with shortcode search
 
 = 2.5.2 =
 * Styling tweaks/fixes

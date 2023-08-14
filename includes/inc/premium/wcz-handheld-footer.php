@@ -167,10 +167,16 @@ function wcz_add_handheld_footer_bar() {
             <div class="wcz-handheld-searchbar">
                 <?php
                 $wcz_hhfb_placeholder = get_option( 'wcz-handheld-search-placeholder', woocustomizer_library_get_default( 'wcz-handheld-search-placeholder' ) );
-                if ( get_option( 'wcz-handheld-use-wcz-search', woocustomizer_library_get_default( 'wcz-handheld-use-wcz-search' ) ) ) :
-                    echo do_shortcode( '[woocustomizer_ajax_search placeholder="' . esc_attr( $wcz_hhfb_placeholder ) . '" ]' );
+                
+                if ( 'shortcode' == get_option( 'wcz-handheld-search-display', woocustomizer_library_get_default( 'wcz-handheld-search-display' ) ) ) :
+                    $search_shortcode = get_option( 'wcz-handheld-search-shortcode', woocustomizer_library_get_default( 'wcz-handheld-search-shortcode' ) );
+                    echo do_shortcode( $search_shortcode );
                 else :
-                    get_search_form();
+                    if ( get_option( 'wcz-handheld-use-wcz-search', woocustomizer_library_get_default( 'wcz-handheld-use-wcz-search' ) ) ) :
+                        echo do_shortcode( '[woocustomizer_ajax_search placeholder="' . esc_attr( $wcz_hhfb_placeholder ) . '" ]' );
+                    else :
+                        get_search_form();
+                    endif;
                 endif; ?>
             </div>
         <?php endif; ?>

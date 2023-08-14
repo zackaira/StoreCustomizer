@@ -4289,6 +4289,7 @@ function woocustomizer_customizer_library_options() {
                     'type'    => 'checkbox',
                     'default' => 0,
                 );
+
                 $options['wcz-handheld-remove-cart'] = array(
                     'id' => 'wcz-handheld-remove-cart',
                     'label'   => __( 'Remove Cart Link', 'woocustomizer' ),
@@ -4531,6 +4532,26 @@ function woocustomizer_customizer_library_options() {
                     'section' => $section,
                     'type'    => 'checkbox',
                     'default' => 0,
+                );
+
+                $choices = array(
+                    'default' => __( 'Default WP Search', 'woocustomizer' ),
+                    'shortcode' => __( 'Add Shortcode Search', 'woocustomizer' ),
+                );
+                $options['wcz-handheld-search-display'] = array(
+                    'id' => 'wcz-handheld-search-display',
+                    'label'   => __( 'Show Search:', 'woocustomizer' ),
+                    'section' => $section,
+                    'type'    => 'select',
+                    'choices' => $choices,
+                    'default' => 'default',
+                );
+                $options['wcz-handheld-search-shortcode'] = array(
+                    'id' => 'wcz-handheld-search-shortcode',
+                    'label'   => __( 'Shortcode:', 'woocustomizer' ),
+                    'section' => $section,
+                    'type'    => 'text',
+                    'default' => '',
                 );
                 
                 if ( 'on' == get_option( 'wcz_set_enable_ajax_search', woocustomizer_library_get_default( 'wcz_set_enable_ajax_search' ) ) ) :
