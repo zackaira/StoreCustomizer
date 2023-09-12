@@ -5,7 +5,7 @@ Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce a
 Requires at least: 5.0
 Tested up to: 6.3
 Requires PHP: 5.6
-Stable tag: 2.5.3
+Stable tag: 2.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -260,6 +260,11 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.4 =
+* Styling tweaks/fixes
+* Updated Freemius SDK
+* Fix display stock on shop bug for variable products
 
 = 2.5.3 =
 * Styling tweaks/fixes

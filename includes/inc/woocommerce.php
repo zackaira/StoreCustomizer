@@ -642,9 +642,9 @@ function wcz_add_new_product_badge() {
 function wcz_show_stock_amount_loop() {
 	$product = wc_get_product( get_the_ID() );
 
-	if ( $product->get_stock_quantity() ) { // if manage stock is enabled
-		$wcz_pstock = number_format( $product->get_stock_quantity(), 0, '', '' );
+	$wcz_pstock = get_total_combined_stock_quantity($product);
 
+	if (boolval($wcz_pstock)) {
 		if ( $wcz_pstock <= 3 ) { // if stock is low
 			$wcz_stocktxt = esc_html( get_option( 'wcz-shop-stock-lowamnt-txt', woocustomizer_library_get_default( 'wcz-shop-stock-lowamnt-txt' ) ) );
 			echo '<div class="wcz-stock-remaining">' . str_ireplace( '[no]', $wcz_pstock, $wcz_stocktxt ) . '</div>';
@@ -653,6 +653,20 @@ function wcz_show_stock_amount_loop() {
 			echo '<div class="wcz-stock-remaining">' . str_ireplace( '[no]', $wcz_pstock, $wcz_stocktxt ) . '</div>';
 		}
 	}
+}
+function get_total_combined_stock_quantity($product) {
+	if (!$product->is_type('variable')) return $product->get_stock_quantity();
+	// if ($product->managing_stock()) return $product->get_stock_quantity();
+
+	$total = 0;
+	
+	if ($product->is_type('variable')) {
+		foreach ($product->get_visible_children() as $variationId) {
+			$variation = wc_get_product($variationId);
+			$total += $variation->get_stock_quantity();
+		}
+	}
+	return number_format( $total, 0, '', '' );
 }
 // Cart Page Attributes
 if ( get_option( 'wcz-cart-add-product-info', woocustomizer_library_get_default( 'wcz-cart-add-product-info' ) ) && get_option( 'wcz-cart-add-productinfo-atts', woocustomizer_library_get_default( 'wcz-cart-add-productinfo-atts' ) ) ) {
