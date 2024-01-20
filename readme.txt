@@ -264,6 +264,7 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 = 2.5.5 =
 * Styling tweaks/fixes
 * Version compatibility for WP 6.4 & WC 8.5
+* Updated Freemius SDK
 * Updated the language .pot file
 * PREMIUM: Fix HPOS shortcodes bug on Custom Thank You pages
 
