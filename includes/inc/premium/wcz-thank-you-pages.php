@@ -305,7 +305,7 @@ function wcz_ctp_shortcode_order_summary( $atts ) {
 
     $order_id_by_key = wc_get_order_id_by_order_key( $order_key );
 
-    if ( $order_id_by_key === $order_id ) :
+    if ( intval($order_id_by_key) === intval($order_id) ) :
 
         $wcz_order = wc_get_order( $order_id );
         
@@ -458,7 +458,7 @@ function wcz_ctp_shortcode_order_details( $atts ) {
 
     $order_id_by_key = wc_get_order_id_by_order_key( $order_key );
 
-    if ( $order_id_by_key === $order_id ) :
+    if ( intval($order_id_by_key) === intval($order_id) ) :
 
         $wcz_order = wc_get_order( $order_id );
 
@@ -576,7 +576,7 @@ function wcz_ctp_shortcode_customer_details( $atts ) {
 
     $order_id_by_key = wc_get_order_id_by_order_key( $order_key );
 
-    if ( $order_id_by_key === $order_id ) :
+    if ( intval($order_id_by_key) === intval($order_id) ) :
 
         $wcz_order = wc_get_order( $order_id );
         
