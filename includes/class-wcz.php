@@ -103,6 +103,15 @@ class WooCustomizer {
 	public $script_suffix;
 
 	/**
+	 * The plugin includes URL.
+	 *
+	 * @var     string
+	 * @access  public
+	 * @since   1.0.0
+	 */
+	public $includes_url;
+
+	/**
 	 * Constructor funtion.
 	 *
 	 * @param string $file File constructor.

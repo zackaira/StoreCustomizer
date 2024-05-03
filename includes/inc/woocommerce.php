@@ -541,18 +541,19 @@ function wcz_add_product_shopping_button() {
 	echo '<a class="button wcz-continue" href="' . esc_url( $wcz_csblink ) . '">' . esc_html( $wcz_cscbtxt ) . '</a>';
 }
 // Add 'Back To Shop' button to the Cart page
+// Fix given by WPML __( get_option( 'wcz-cart-bts-txt'...
 function wcz_add_backtoshop_cart_button() {
     $wcz_btsurl = get_option( 'wcz-cart-bts-url', woocustomizer_library_get_default( 'wcz-cart-bts-url' ) );
-	$wcz_btslink = $wcz_btsurl && 'custom' == get_option( 'wcz-cart-bts-type', woocustomizer_library_get_default( 'wcz-cart-bts-type' ) ) ? $wcz_btsurl : get_permalink( wc_get_page_id( 'shop' ) );
-	$wcz_btsalign = get_option( 'wcz-cart-bts-align', woocustomizer_library_get_default( 'wcz-cart-bts-align' ) );
-	
-	if ( 'back' === get_option( 'wcz-cart-bts-type', woocustomizer_library_get_default( 'wcz-cart-bts-type' ) ) ) {
-		if ( wp_get_referer() ) {
-			echo '<div class="wcz-btsbtn ' . sanitize_html_class( $wcz_btsalign ) . '"><a class="button wcz-bts-btn" onclick="javascript:history.back()">' . get_option( 'wcz-cart-bts-txt', woocustomizer_library_get_default( 'wcz-cart-bts-txt' ) ) . '</a></div>';
-		}
-	} else {
-		echo '<div class="wcz-btsbtn ' . sanitize_html_class( $wcz_btsalign ) . '"><a class="button wcz-bts-btn" href="' . esc_url( $wcz_btslink ) . '">' . get_option( 'wcz-cart-bts-txt', woocustomizer_library_get_default( 'wcz-cart-bts-txt' ) ) . '</a></div>';
-	}
+    $wcz_btslink = ( $wcz_btsurl && 'custom' == get_option( 'wcz-cart-bts-type', woocustomizer_library_get_default( 'wcz-cart-bts-type' ) ) ? $wcz_btsurl : get_permalink( wc_get_page_id( 'shop' ) ) );
+    $wcz_btsalign = get_option( 'wcz-cart-bts-align', woocustomizer_library_get_default( 'wcz-cart-bts-align' ) );
+     
+    if ( 'back' === get_option( 'wcz-cart-bts-type', woocustomizer_library_get_default( 'wcz-cart-bts-type' ) ) ) {
+        if ( wp_get_referer() ) {
+            echo  '<div class="wcz-btsbtn ' . sanitize_html_class( $wcz_btsalign ) . '"><a class="button wcz-bts-btn" onclick="javascript:history.back()">' . __( get_option( 'wcz-cart-bts-txt', woocustomizer_library_get_default( 'wcz-cart-bts-txt' ) ), 'woocustomizer') . '</a></div>' ;
+        }
+    } else {
+        echo  '<div class="wcz-btsbtn ' . sanitize_html_class( $wcz_btsalign ) . '"><a class="button wcz-bts-btn" href="' . esc_url( $wcz_btslink ) . '">' . __( get_option( 'wcz-cart-bts-txt', woocustomizer_library_get_default( 'wcz-cart-bts-txt' ) ), 'woocustomizer') . '</a></div>' ;
+    }
 }
 // Remove Product SKU
 function wcz_remove_product_sku( $enabled ) {
@@ -1328,7 +1329,7 @@ if ( ! function_exists( 'woocommerce_button_proceed_to_checkout' ) ) {
 	function woocommerce_button_proceed_to_checkout() {
 		if ( get_option( 'wcz-cart-proceed-btn', woocustomizer_library_get_default( 'wcz-cart-proceed-btn' ) ) ) { ?>
 			<a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="checkout-button button alt wc-forward">
-				<?php echo esc_html( get_option( 'wcz-cart-proceed-btn-txt', woocustomizer_library_get_default( 'wcz-cart-proceed-btn-txt' ) ) ); ?>
+				<?php echo esc_html__( get_option( 'wcz-cart-proceed-btn-txt', woocustomizer_library_get_default( 'wcz-cart-proceed-btn-txt' ) ), 'woocustomizer' ); ?>
 			</a><?php
 		} else {
 			wc_get_template( 'cart/proceed-to-checkout-button.php' );
@@ -1340,7 +1341,7 @@ function wcz_edit_checkout_placeorder_btn_txt( $button_text ) {
 	if ( ! get_option( 'wcz-checkout-placeorder-btn', woocustomizer_library_get_default( 'wcz-checkout-placeorder-btn' ) ) )
 		return $button_text;
 
-	return esc_html( get_option( 'wcz-checkout-placeorder-btn-txt', woocustomizer_library_get_default( 'wcz-checkout-placeorder-btn-txt' ) ) );
+	return esc_html__( get_option( 'wcz-checkout-placeorder-btn-txt', woocustomizer_library_get_default( 'wcz-checkout-placeorder-btn-txt' ) ), 'woocustomizer' );
 }
 add_filter( 'woocommerce_order_button_text', 'wcz_edit_checkout_placeorder_btn_txt' );
 
