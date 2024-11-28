@@ -164,10 +164,11 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
 #wcz_settings .nav-tab-wrapper .nav-tab {
   background-color: #f3f5f6;
   border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
   margin: 0 0 4px 6px;
   padding: 12px 15px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   float: none;
   display: block;
   position: relative;
@@ -175,15 +176,15 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
 }
 #wcz_settings .nav-tab-wrapper .nav-tab:hover {
   background-color: #fff !important;
-  border-color: rgba(0, 113, 161, 0.48) !important;
+  border-color: #242f6c7a !important;
   border-right-color: #b5b5b5 !important;
-  color: #0071a1;
+  color: #242f6c;
 }
 #wcz_settings .nav-tab-wrapper .nav-tab.nav-tab-active {
   background-color: #fff !important;
-  border-color: #0071a1 !important;
+  border-color: #b5b5b5 !important;
   border-right-color: #fff !important;
-  color: #0071a1 !important;
+  color: #242f6c !important;
   border-right: 1px solid #fff;
 }
 #wcz_settings .nav-tab-wrapper .nav-tab.wcz-upgrade-tab {
@@ -220,7 +221,7 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   font-size: 30px;
   text-align: center;
   font-weight: 300;
-  color: #0280b2;
+  color: #242f6c;
 }
 .wcz-settings-desc {
   max-width: 640px;
@@ -235,6 +236,7 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   flex: 1;
   background-color: #fff;
   box-shadow: 0 0 0 1px #b5b5b5, 0 1px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
   margin: 0;
   padding: 18px 40px 25px;
   box-sizing: border-box;
@@ -242,6 +244,7 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   background-repeat: no-repeat;
   background-position: right top;
   min-height: 500px;
+  color: #687693;
 }
 .wrap#wcz_settings .form-table th {
   width: 50%;
@@ -278,8 +281,8 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
 }
 
 .wcz-customizer {
-  max-width: 1200px;
-  margin: 25px 0 0;
+  margin: 25px 0 0 180px;
+  max-width: 960px;
   text-align: center;
 }
 .wcz-customizer p {
@@ -325,7 +328,7 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   color: #757575;
 }
 .wcz-customizer-links a.wcz-upgrade {
-  color: #e46e1a;
+  color: #03abe3;
 }
 
 .wcz-doclink a {
@@ -352,12 +355,12 @@ body.wp-admin.plugins-php tr[data-slug="woocustomizer"] span.upgrade a {
   padding: 8px 22px 10px;
   position: relative;
   top: -3px;
-  border: 1px solid #0071a1;
+  border: 1px solid #242f6c;
   border-radius: 2px;
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
-  color: #0071a1;
+  color: #242f6c;
   background: #f7fcff;
   cursor: pointer;
 }
@@ -421,20 +424,8 @@ label[for="wcz_payment_gateway_title"] {
   display: none !important;
 }
 
-.wcz-customizer-links a.wcz-acc-account {
-  color: #2678ed;
-}
-.wcz-customizer-links a.wcz-acc-affiliate {
-  color: #00a13f;
-}
-.wcz-customizer-links a.wcz-acc-trial {
-  color: #d238f8;
-}
-.wcz-customizer-links a.wcz-acc-upgrade {
-  color: #ee2613;
-}
-.wcz-customizer-links a.wcz-acc-contact {
-  color: #ffaa00;
+.wcz-customizer-links a {
+  color: #242f6c;
 }
 
 /* Getting started Video */
@@ -481,6 +472,12 @@ label[for="wcz_payment_gateway_title"] {
   padding-top: 15px !important;
 }
 
+@media only screen and (max-width: 840px) {
+  .wcz-customizer {
+    margin: 25px 0 0 0;
+    max-width: 100%;
+  }
+}
 @media only screen and (max-width: 782px) {
   .wcz-temp-heading {
     margin: 18px 10px 20px 10px;
@@ -509,13 +506,13 @@ label[for="wcz_payment_gateway_title"] {
     margin: 0 0 15px;
   }
   #wcz_settings .nav-tab-wrapper .nav-tab {
-    border: 1px solid #0071a1;
+    border: 1px solid #242f6c;
     text-align: center;
     margin: 0 0 -1px;
     padding: 5px 10px;
   }
   #wcz_settings .nav-tab-wrapper .nav-tab.nav-tab-active {
-    border: 1px solid #0071a1 !important;
+    border: 1px solid #242f6c !important;
   }
   .wrap#wcz_settings form {
     display: block;

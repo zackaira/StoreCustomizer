@@ -136,10 +136,10 @@ class WooCustomizer {
         add_action( 'admin_notices', array( $this, 'wcz_feedback_notice' ) );
 
 		// notif : For another Admin Notice
-        if ( ! wcz_fs()->can_use_premium_code__premium_only() ) {
-            add_action( 'admin_init', array( $this, 'wcz_quicknote_notice_ignore' ), 0 );
-            add_action( 'admin_notices', array( $this, 'wcz_quicknote_notice' ) );
-        }
+        // if ( ! wcz_fs()->can_use_premium_code__premium_only() ) {
+        //     add_action( 'admin_init', array( $this, 'wcz_quicknote_notice_ignore' ), 0 );
+        //     add_action( 'admin_notices', array( $this, 'wcz_quicknote_notice' ) );
+        // }
 
 		// Load frontend JS & CSS.
 		add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_styles' ), 10 );

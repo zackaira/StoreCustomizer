@@ -2194,7 +2194,7 @@ function woocustomizer_customizer_library_options() {
         );
         $options['wcz-cart-remove-coupons'] = array(
             'id' => 'wcz-cart-remove-coupons',
-            'label'   => __( 'Remove Coupons form', 'woocustomizer' ),
+            'label'   => __( 'Disable Coupons', 'woocustomizer' ),
             'section' => $section,
             'type'    => 'checkbox',
             'default' => 0,

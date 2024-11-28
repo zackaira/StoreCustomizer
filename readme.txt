@@ -3,13 +3,13 @@ Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce addons
 Requires at least: 5.0
-Tested up to: 6.5
+Tested up to: 6.6
 Requires PHP: 5.6
-Stable tag: 2.5.6
+Stable tag: 2.5.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Customize your WooCommerce pages without code... StoreCustomizer, a free WooCommerce customizer plugin, has all the WooCommerce hooks available for you to edit your online store & lots more features, all built into one plugin. Easily edit your WooCommerce Shop and Product pages, Cart page, Checkout page and User Account pages.
+A store editor plugin for editing all WooCommerce store and product pages, cart, checkout and user account pages, all within the WordPress Customizer
 
 
 == Description ==
@@ -260,6 +260,19 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.8 =
+* Styling tweaks/fixes
+* Minor code refactoring
+* Updated the language .pot file
+* Compatibility updates for WC 9.4
+
+= 2.5.7 =
+* Styling tweaks/fixes
+* Updated Freemius SDK
+* Reduced plugin short description to WP guidlines
+* Updated the language .pot file
+* Compatibility updates for WP 6.6 & WC 9.1
 
 = 2.5.6 =
 * Styling tweaks/fixes

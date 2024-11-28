@@ -702,21 +702,20 @@ class WooCustomizer_Settings {
 			$html         .= '</form>' . "\n";
 		$html             .= '</div><div class="wcz-customizer">' . "\n";
 		$html             .= '<div class="wcz-customizer-links">' . "\n";
-            $html             .= '<a href="' . esc_url( wcz_fs()->get_account_url() ) . '" class="wcz-acc-account">' . esc_html( __( 'Account', 'woocustomizer' ) ) . '</a>' . "\n";
-			// Only displayed in the free version
-			if ( ! wcz_fs()->can_use_premium_code() ) {
-				$html             .= '<a href="' . esc_url( wcz_fs()->get_upgrade_url() ) . '" class="wcz-upgrade wcz-acc-upgrade">' . esc_html( __( 'Upgrade', 'woocustomizer' ) ) . '</a>' . "\n";
-                $html             .= '<a href="' . esc_url( admin_url( 'admin.php?billing_cycle=annual&trial=true&page=wcz_settings-pricing' ) ) . '" class="wcz-acc-trial">' . esc_html( __( 'Free Premium Trial', 'woocustomizer' ) ) . '</a>' . "\n";
-            }
-            $html             .= '<a href="' . esc_url( admin_url( 'admin.php?page=wcz_settings-affiliation' ) ) . '" class="wcz-acc-affiliate">' . esc_html( __( 'Become an Affiliate', 'woocustomizer' ) ) . '</a>' . "\n";
-			// Contact is only for Premium users
-			if ( wcz_fs()->can_use_premium_code() ) {
-				$html             .= '<a href="' . esc_url( wcz_fs()->contact_url() ) . '" class="wcz-acc-contact">' . esc_html( __( 'Contact Us', 'woocustomizer' ) ) . '</a>' . "\n";
-			}
+		if ( wcz_fs()->can_use_premium_code() ) {
+			$html             .= '<a href="' . esc_url( wcz_fs()->get_account_url() ) . '" class="wcz-acc-account">' . esc_html( __( 'Account', 'woocustomizer' ) ) . '</a>' . "\n";
+		}
+		$html             .= '<a href="' . esc_url( admin_url( 'admin.php?page=wcz_settings-affiliation' ) ) . '" class="wcz-acc-affiliate">' . esc_html( __( 'Become an Affiliate', 'woocustomizer' ) ) . '</a>' . "\n";
+		if ( ! wcz_fs()->can_use_premium_code() ) {
+			$html             .= '<a href="' . esc_url( admin_url( 'admin.php?billing_cycle=annual&trial=true&page=wcz_settings-pricing' ) ) . '" class="wcz-acc-trial">' . esc_html( __( 'Free Premium Trial', 'woocustomizer' ) ) . '</a>' . "\n";
+			$html             .= '<a href="' . esc_url( wcz_fs()->get_upgrade_url() ) . '" class="wcz-upgrade wcz-acc-upgrade">' . esc_html( __( 'Upgrade', 'woocustomizer' ) ) . '</a>' . "\n";
+		}
+		if ( wcz_fs()->can_use_premium_code() ) {
+			$html             .= '<a href="' . esc_url( wcz_fs()->contact_url() ) . '" class="wcz-acc-contact">' . esc_html( __( 'Contact Us', 'woocustomizer' ) ) . '</a>' . "\n";
+		}
 		$html             .= '</div>' . "\n";
 		$html             .= '<p>' . esc_html( __( 'Click here to open the WordPress Customizer and navigate to the -> StoreCustomizer panel.', 'woocustomizer' ) ) . '</p>' . "\n";
 		$html             .= '<a href="' . esc_url( admin_url( 'customize.php' ) ) . '" class="wcz-customizer-btn">' . esc_html( __( 'Customize Your Settings', 'woocustomizer' ) ) . '</a>' . "\n";
-		$html             .= '<p>' . esc_html( __( 'Reset all settings: Select the option above, then uninstall and re-install the StoreCustomizer plugin.', 'woocustomizer' ) ) . '</p>' . "\n";
 		$html             .= '</div>' . "\n";
 		$html             .= '</div>' . "\n";
 
