@@ -3,9 +3,9 @@ Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce addons
 Requires at least: 5.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 2.5.8
+Stable tag: 2.5.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -260,6 +260,13 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.5.9 =
+* Styling tweaks/fixes
+* Backend code commenting
+* Fix update product prefix & suffix php notice
+* Updated Freemius SDK
+* Version compatibility for WP 6.7 & WC 9.6
 
 = 2.5.8 =
 * Styling tweaks/fixes

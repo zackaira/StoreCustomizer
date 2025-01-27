@@ -989,11 +989,21 @@ add_action( 'woocommerce_product_data_panels', 'wcz_custom_per_product_settings'
  * Save Product Tab Settings.
  */
 function wcz_custom_per_product_settings_save_data( $id, $post ) {
-    update_post_meta( $id, 'wcz_pps_price_prefix', $_POST['wcz_pps_price_prefix'] );
-    update_post_meta( $id, 'wcz_pps_price_suffix', $_POST['wcz_pps_price_suffix'] );
-	update_post_meta( $id, 'wcz_pps_qty_suffix', $_POST['wcz_pps_qty_suffix'] );
-	update_post_meta( $id, 'wcz_pcs_buttontxt', $_POST['wcz_pcs_buttontxt'] );
-	update_post_meta( $id, 'wcz_pcs_buttonurl', $_POST['wcz_pcs_buttonurl'] );
+    if ( isset( $_POST['wcz_pps_price_prefix'] ) ) {
+        update_post_meta( $id, 'wcz_pps_price_prefix', sanitize_text_field( $_POST['wcz_pps_price_prefix'] ) );
+    }
+    if ( isset( $_POST['wcz_pps_price_suffix'] ) ) {
+        update_post_meta( $id, 'wcz_pps_price_suffix', sanitize_text_field( $_POST['wcz_pps_price_suffix'] ) );
+    }
+    if ( isset( $_POST['wcz_pps_qty_suffix'] ) ) {
+        update_post_meta( $id, 'wcz_pps_qty_suffix', sanitize_text_field( $_POST['wcz_pps_qty_suffix'] ) );
+    }
+    if ( isset( $_POST['wcz_pcs_buttontxt'] ) ) {
+        update_post_meta( $id, 'wcz_pcs_buttontxt', sanitize_text_field( $_POST['wcz_pcs_buttontxt'] ) );
+    }
+    if ( isset( $_POST['wcz_pcs_buttonurl'] ) ) {
+        update_post_meta( $id, 'wcz_pcs_buttonurl', esc_url_raw( $_POST['wcz_pcs_buttonurl'] ) );
+    }
 }
 add_action( 'woocommerce_process_product_meta', 'wcz_custom_per_product_settings_save_data', 10, 2 );
 
