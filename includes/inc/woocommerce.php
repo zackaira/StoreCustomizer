@@ -1007,6 +1007,48 @@ function wcz_custom_per_product_settings_save_data( $id, $post ) {
 }
 add_action( 'woocommerce_process_product_meta', 'wcz_custom_per_product_settings_save_data', 10, 2 );
 
+// Add custom fields for each variation in the product edit screen
+function wcz_add_variation_custom_fields( $loop, $variation_data, $variation ) {
+	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) && empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
+		woocommerce_wp_text_input( array(
+			'id'            => 'wcz_prefix_field[' . $variation->ID . ']',
+			'label'         => __( 'Variation Prefix', 'woocustomizer' ),
+			'wrapper_class' => 'form-row form-row-first',
+			'placeholder'   => __( '"& nbsp;" (without a space) to remove this prefix', 'woocustomizer' ),
+			'desc_tip'      => true,
+			'description'   => __( 'This will display before the variable price once a variation is selected.', 'woocustomizer' ),
+			'value'         => get_post_meta( $variation->ID, 'wcz_var_price_prefix', true ),
+		) );
+
+		woocommerce_wp_text_input( array(
+			'id'            => 'wcz_suffix_field[' . $variation->ID . ']',
+			'label'         => __( 'Variation Suffix', 'woocustomizer' ),
+			'wrapper_class' => 'form-row form-row-last',
+			'placeholder'   => __( '"& nbsp;" (without a space) to remove this suffix', 'woocustomizer' ),
+			'desc_tip'      => true,
+			'description'   => __( 'This will display after the variable price once a variation is selected.', 'woocustomizer' ),
+			'value'         => get_post_meta( $variation->ID, 'wcz_var_price_suffix', true ),
+		) );
+	}
+}
+add_action( 'woocommerce_variation_options_pricing', 'wcz_add_variation_custom_fields', 10, 3 );
+
+function wcz_save_variation_custom_fields( $variation_id, $loop ) {
+	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) && empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
+		// Save wcz_var_price_prefix
+		if ( isset( $_POST['wcz_prefix_field'][ $variation_id ] ) ) {
+			$prefix_field = sanitize_text_field( $_POST['wcz_prefix_field'][ $variation_id ] );
+			update_post_meta( $variation_id, 'wcz_var_price_prefix', $prefix_field );
+		}
+		// Save wcz_var_price_suffix
+		if ( isset( $_POST['wcz_suffix_field'][ $variation_id ] ) ) {
+			$suffix_field = sanitize_text_field( $_POST['wcz_suffix_field'][ $variation_id ] );
+			update_post_meta( $variation_id, 'wcz_var_price_suffix', $suffix_field );
+		}
+	}
+}
+add_action( 'woocommerce_save_product_variation', 'wcz_save_variation_custom_fields', 10, 2 );
+
 /**
  * ------------------------------------------------------------------------------------ WooCustomzer per Product settings.
  * * ------------------------------------------------------------------------------------ Remove WooCommerce Functionality.
@@ -1189,39 +1231,59 @@ function wcz_rename_addinfotab_headings() {
 	return esc_html( get_option( 'wcz-wcproduct-addinfo-head', woocustomizer_library_get_default( 'wcz-wcproduct-addinfo-head' ) ) );
 }
 function wcz_add_price_prefix_suffix( $price, $product ) {
+    // If the product is a variation, attempt to get variation‐specific prefix/suffix.
+    if ( $product->is_type( 'variation' ) ) {
+        $variation_id = $product->get_id();
+        $var_prefix = get_post_meta( $variation_id, 'wcz_var_price_prefix', true ) ? '<small>' . get_post_meta( $variation_id, 'wcz_var_price_prefix', true ) . '</small> ' : '';
+        $var_suffix = get_post_meta( $variation_id, 'wcz_var_price_suffix', true ) ? ' <small>' . get_post_meta( $variation_id, 'wcz_var_price_suffix', true ) . '</small>' : '';
+
+        // If at least one is set, use them and return immediately.
+        if ( $var_prefix !== '' || $var_suffix !== '' ) {
+            return $var_prefix . $price . $var_suffix;
+        }
+    }
+
+    // Otherwise, for standard products (or variations without custom meta), use the global settings.
     $wcz_price_prefix = '';
     $wcz_price_suffix = '';
     if ( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) {
-        if ( get_option( 'wcz-add-price-prefix-shop', woocustomizer_library_get_default( 'wcz-add-price-prefix-shop' ) ) && ( is_shop() || is_product_category() || is_product_tag() || is_product() || is_cart() ) ) {
-            $wcz_price_prefix = get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true ) ? '<small>' . get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true ) . '</small> ' : '<small>' . get_option( 'wcz-add-price-prefix-txt', woocustomizer_library_get_default( 'wcz-add-price-prefix-txt' ) ) . '</small> ';
+        // Use the product-level meta if set; otherwise use the global default.
+        $prefix_meta = get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true );
+        if ( $prefix_meta ) {
+            $wcz_price_prefix = '<small>' . $prefix_meta . '</small> ';
         } else {
-            if ( is_product() ) {
-                $wcz_price_prefix = get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true ) ? '<small>' . get_post_meta( get_the_ID(), 'wcz_pps_price_prefix', true ) . '</small> ' : '<small>' . get_option( 'wcz-add-price-prefix-txt', woocustomizer_library_get_default( 'wcz-add-price-prefix-txt' ) ) . '</small> ';
-            }
+            $wcz_price_prefix = '<small>' . get_option( 'wcz-add-price-prefix-txt', woocustomizer_library_get_default( 'wcz-add-price-prefix-txt' ) ) . '</small> ';
         }
     }
     if ( get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) {
-        if ( get_option( 'wcz-add-price-suffix-shop', woocustomizer_library_get_default( 'wcz-add-price-suffix-shop' ) ) && ( is_shop() || is_product_category() || is_product_tag() || is_product() || is_cart() ) ) {
-            $wcz_price_suffix = get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ? ' <small>' . get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) . '</small> ' : ' <small>' . get_option( 'wcz-add-price-suffix-txt', woocustomizer_library_get_default( 'wcz-add-price-suffix-txt' ) ) . '</small> ';
+        $suffix_meta = get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true );
+        if ( $suffix_meta ) {
+            $wcz_price_suffix = ' <small>' . $suffix_meta . '</small> ';
         } else {
-            if ( is_product() ) {
-                $wcz_price_suffix = get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) ? ' <small>' . get_post_meta( get_the_ID(), 'wcz_pps_price_suffix', true ) . '</small> ' : ' <small>' . get_option( 'wcz-add-price-suffix-txt', woocustomizer_library_get_default( 'wcz-add-price-suffix-txt' ) ) . '</small> ';
-            }
+            $wcz_price_suffix = ' <small>' . get_option( 'wcz-add-price-suffix-txt', woocustomizer_library_get_default( 'wcz-add-price-suffix-txt' ) ) . '</small> ';
         }
-	}
+    }
 
-	$price_excl_tax = wc_get_price_excluding_tax( $product );
-	$price_incl_tax = wc_get_price_including_tax( $product );
+    // Replace any tax placeholders if they are used.
+    $price_excl_tax = wc_get_price_excluding_tax( $product );
+    $price_incl_tax = wc_get_price_including_tax( $product );
+    $wcz_price_prefix = str_ireplace( '{price_excluding_tax}', wc_price( $price_excl_tax ), $wcz_price_prefix );
+    $wcz_price_prefix = str_ireplace( '{price_including_tax}', wc_price( $price_incl_tax ), $wcz_price_prefix );
+    $wcz_price_suffix = str_ireplace( '{price_excluding_tax}', wc_price( $price_excl_tax ), $wcz_price_suffix );
+    $wcz_price_suffix = str_ireplace( '{price_including_tax}', wc_price( $price_incl_tax ), $wcz_price_suffix );
+
+	// If the product is on sale and has separate sale HTML (<ins> tags), only add prefix/suffix inside the <ins> block.
+    if ( $product->is_on_sale() && strpos( $price, '<ins>' ) !== false ) {
+        if ( preg_match( '/(<ins>)(.*?)(<\/ins>)/is', $price, $matches ) ) {
+            // The sale price is in $matches[2]
+            $new_sale = '<ins>' . $wcz_price_prefix . $matches[2] . $wcz_price_suffix . '</ins>';
+            // Replace the original <ins> block with our modified version.
+            $price = str_replace( $matches[0], $new_sale, $price );
+        }
+        return $price;
+    }
 	
-	$wcz_price_prefix = str_ireplace( '{price_excluding_tax}', wc_price( $price_excl_tax ), $wcz_price_prefix );
-	$wcz_price_prefix = str_ireplace( '{price_including_tax}', wc_price( $price_incl_tax ), $wcz_price_prefix );
-
-	$wcz_price_suffix = str_ireplace( '{price_excluding_tax}', wc_price( $price_excl_tax ), $wcz_price_suffix );
-	$wcz_price_suffix = str_ireplace( '{price_including_tax}', wc_price( $price_incl_tax ), $wcz_price_suffix );
-
-	$price = $wcz_price_prefix . $price . $wcz_price_suffix;
-	
-    return $price;
+    return $wcz_price_prefix . $price . $wcz_price_suffix;
 }
 function wcz_add_product_qty_suffix() {
 	$suffix = get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) ? get_post_meta( get_the_ID(), 'wcz_pps_qty_suffix', true ) : get_option( 'wcz-product-qty-suffix', woocustomizer_library_get_default( 'wcz-product-qty-suffix' ) );

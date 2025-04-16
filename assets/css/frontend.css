@@ -50,7 +50,8 @@ body.wcz-btn-style-detailed.wcz-wooblocks
   background-color: #e8e8e8;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 4px;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5),
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
     0 1px 4px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: #656565;
@@ -215,7 +216,9 @@ body.wcz-wooblocks
 .wcz-longdescdiv-one.bot-divider,
 .wcz-reviewsdiv-one.bot-divider,
 .wcz-addinfodiv-one.bot-divider {
-  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12), 0 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 -1px 0 rgba(0, 0, 0, 0.12),
+    0 1px 0 rgba(0, 0, 0, 0.12);
 }
 
 .wcz-longdescdiv-two,
@@ -653,6 +656,10 @@ a.button.wcz-bts-btn {
 }
 .wcz-qty-suffix.nofloat {
   float: none;
+}
+
+.product .price small {
+  opacity: 0.72;
 }
 
 /* <fs_premium_only> */

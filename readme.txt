@@ -3,9 +3,9 @@ Contributors: Kaira
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=PFZGBM92T8XSE&source=url
 Tags: customize woocommerce, ecommerce, woocommerce, online store, woocommerce addons
 Requires at least: 5.0
-Tested up to: 6.7
+Tested up to: 6.8
 Requires PHP: 5.6
-Stable tag: 2.6.0
+Stable tag: 2.6.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -179,6 +179,13 @@ WooCommerce Product Badges will let you easily add great looking product badges 
 View [StoreCustomizer Pro features](https://storecustomizer.com/go/pro-features/) & see videos on what each premium feature offers.
 
 
+= Related Products by Kaira =
+
+[Blockons](https://wordpress.org/plugins/blockons/): Advanced editor blocks and site addons for your WordPress site.
+
+[Linkt](https://wordpress.org/plugins/linkt/): Affiliate and Custom link tracking and management.
+
+
 = Translations =
 
 Translations currently available for StoreCustomizer:
@@ -260,6 +267,12 @@ We've found out we're not really allowed to use the "Woo" prefix, so we've chang
 
 
 == Changelog ==
+
+= 2.6.1 =
+* Styling tweaks/fixes
+* Minor code refactoring
+* Added: Price Prefix & Suffix for variable product variations
+* Updated the language .pot file
 
 = 2.6.0 =
 * Styling tweaks/fixes
