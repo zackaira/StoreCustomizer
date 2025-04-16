@@ -1009,7 +1009,7 @@ add_action( 'woocommerce_process_product_meta', 'wcz_custom_per_product_settings
 
 // Add custom fields for each variation in the product edit screen
 function wcz_add_variation_custom_fields( $loop, $variation_data, $variation ) {
-	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) && empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
+	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) || empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
 		woocommerce_wp_text_input( array(
 			'id'            => 'wcz_prefix_field[' . $variation->ID . ']',
 			'label'         => __( 'Variation Prefix', 'woocustomizer' ),
@@ -1034,7 +1034,7 @@ function wcz_add_variation_custom_fields( $loop, $variation_data, $variation ) {
 add_action( 'woocommerce_variation_options_pricing', 'wcz_add_variation_custom_fields', 10, 3 );
 
 function wcz_save_variation_custom_fields( $variation_id, $loop ) {
-	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) && empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
+	if ( !empty( get_option( 'wcz-add-price-prefix', woocustomizer_library_get_default( 'wcz-add-price-prefix' ) ) ) || empty( !get_option( 'wcz-add-price-suffix', woocustomizer_library_get_default( 'wcz-add-price-suffix' ) ) ) ) {
 		// Save wcz_var_price_prefix
 		if ( isset( $_POST['wcz_prefix_field'][ $variation_id ] ) ) {
 			$prefix_field = sanitize_text_field( $_POST['wcz_prefix_field'][ $variation_id ] );
